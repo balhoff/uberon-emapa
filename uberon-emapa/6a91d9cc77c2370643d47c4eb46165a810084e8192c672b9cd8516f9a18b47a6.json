@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6a91d9cc77c2370643d47c4eb46165a810084e8192c672b9cd8516f9a18b47a6",
+      "nodes" : [
+        {
+          "id" : "UBERON:0034995-mouse",
+          "type" : "CLASS",
+          "lbl" : "jaw mesenchyme (mouse)"
+        },
+        {
+          "id" : "EMAPA:35454",
+          "type" : "CLASS",
+          "lbl" : "jaw primordium mesenchyme"
+        },
+        {
+          "id" : "EMAPA:32907",
+          "type" : "CLASS",
+          "lbl" : "jaw mesenchyme"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0034995-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35454",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:32907",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0034995-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:32907",
+            "UBERON:0034995-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

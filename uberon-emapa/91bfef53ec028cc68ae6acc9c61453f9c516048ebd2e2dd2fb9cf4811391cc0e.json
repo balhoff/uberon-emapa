@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:91bfef53ec028cc68ae6acc9c61453f9c516048ebd2e2dd2fb9cf4811391cc0e",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16751",
+          "type" : "CLASS",
+          "lbl" : "tail paraxial mesenchyme"
+        },
+        {
+          "id" : "UBERON:0003077-mouse",
+          "type" : "CLASS",
+          "lbl" : "paraxial mesoderm (mouse)"
+        },
+        {
+          "id" : "EMAPA:16183",
+          "type" : "CLASS",
+          "lbl" : "trunk paraxial mesenchyme"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16751",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003077-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003077-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16183",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0003077-mouse",
+            "EMAPA:16751"
+          ]
+        }
+      ]
+    }
+  ]
+}

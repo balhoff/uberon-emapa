@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d72f96c97f2228ab45557a861ada2c984575d94bebf1c3a44c50ef538711dd26",
+      "nodes" : [
+        {
+          "id" : "UBERON:0004452-mouse",
+          "type" : "CLASS",
+          "lbl" : "carpal region (mouse)"
+        },
+        {
+          "id" : "EMAPA:19122",
+          "type" : "CLASS",
+          "lbl" : "carpus"
+        },
+        {
+          "id" : "EMAPA:32784",
+          "type" : "CLASS",
+          "lbl" : "wrist"
+        },
+        {
+          "id" : "UBERON:0003319-mouse",
+          "type" : "CLASS",
+          "lbl" : "mesenchyme of carpal region (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0004452-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:19122",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:32784",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004452-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:19122",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003319-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0003319-mouse",
+            "EMAPA:19122"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0004452-mouse",
+            "EMAPA:32784"
+          ]
+        }
+      ]
+    }
+  ]
+}

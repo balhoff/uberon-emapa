@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c0b9d8ee86eced1e956ac213598f017557c8078cf029a7a28fc844b524a92962",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17607",
+          "type" : "CLASS",
+          "lbl" : "nasal cavity respiratory epithelium"
+        },
+        {
+          "id" : "UBERON:0000171-mouse",
+          "type" : "CLASS",
+          "lbl" : "respiration organ (mouse)"
+        },
+        {
+          "id" : "UBERON:0005385-mouse",
+          "type" : "CLASS",
+          "lbl" : "nasal cavity respiratory epithelium (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17607",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0000171-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005385-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17607",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0000171-mouse",
+            "EMAPA:17607"
+          ]
+        }
+      ]
+    }
+  ]
+}

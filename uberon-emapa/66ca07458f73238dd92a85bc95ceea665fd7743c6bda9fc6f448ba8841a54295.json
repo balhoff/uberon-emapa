@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:66ca07458f73238dd92a85bc95ceea665fd7743c6bda9fc6f448ba8841a54295",
+      "nodes" : [
+        {
+          "id" : "UBERON:0004061-mouse",
+          "type" : "CLASS",
+          "lbl" : "neural tube mantle layer (mouse)"
+        },
+        {
+          "id" : "EMAPA:17148",
+          "type" : "CLASS",
+          "lbl" : "neural tube mantle layer"
+        },
+        {
+          "id" : "EMAPA:35360",
+          "type" : "CLASS",
+          "lbl" : "future brain marginal layer"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0004061-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17148",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35360",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004061-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0004061-mouse",
+            "EMAPA:35360"
+          ]
+        }
+      ]
+    }
+  ]
+}

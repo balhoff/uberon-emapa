@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d0b1e3af76a775ce236b8b7c98f91cdd4cce271d3aebf64d6ac809e45ec9ce28",
+      "nodes" : [
+        {
+          "id" : "UBERON:0000167-mouse",
+          "type" : "CLASS",
+          "lbl" : "oral cavity (mouse)"
+        },
+        {
+          "id" : "EMAPA:17411",
+          "type" : "CLASS",
+          "lbl" : "oral cavity"
+        },
+        {
+          "id" : "EMAPA:18399",
+          "type" : "CLASS",
+          "lbl" : "oral region cavity"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0000167-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17411",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18399",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0000167-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:18399",
+            "UBERON:0000167-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

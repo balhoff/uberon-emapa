@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0c5c08c7a50721d4e9a67e98858fd75b7f33d2fb6116c6815ba801e1d8b33523",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17170",
+          "type" : "CLASS",
+          "lbl" : "intraretinal space"
+        },
+        {
+          "id" : "UBERON:0006253-mouse",
+          "type" : "CLASS",
+          "lbl" : "embryonic intraretinal space (mouse)"
+        },
+        {
+          "id" : "EMAPA:16676",
+          "type" : "CLASS",
+          "lbl" : "optic cup intraretinal space"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17170",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006253-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0006253-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16676",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17170",
+            "UBERON:0006253-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

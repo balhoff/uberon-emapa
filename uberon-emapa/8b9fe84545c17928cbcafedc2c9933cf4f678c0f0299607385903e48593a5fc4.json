@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:8b9fe84545c17928cbcafedc2c9933cf4f678c0f0299607385903e48593a5fc4",
+      "nodes" : [
+        {
+          "id" : "EMAPA:35128",
+          "type" : "CLASS",
+          "lbl" : "anterior cortical amygdaloid nucleus"
+        },
+        {
+          "id" : "UBERON:0034991-mouse",
+          "type" : "CLASS",
+          "lbl" : "anterior cortical amygdaloid nucleus (mouse)"
+        },
+        {
+          "id" : "UBERON:0034673-mouse",
+          "type" : "CLASS",
+          "lbl" : "amygdalohippocampal area (mouse)"
+        },
+        {
+          "id" : "EMAPA:35124",
+          "type" : "CLASS",
+          "lbl" : "amygdalohippocampal area"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:35128",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0034991-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0034673-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35128",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35124",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0034673-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35128",
+            "UBERON:0034991-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:35124",
+            "UBERON:0034673-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

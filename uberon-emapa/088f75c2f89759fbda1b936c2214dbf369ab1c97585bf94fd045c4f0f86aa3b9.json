@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:088f75c2f89759fbda1b936c2214dbf369ab1c97585bf94fd045c4f0f86aa3b9",
+      "nodes" : [
+        {
+          "id" : "UBERON:0001074-mouse",
+          "type" : "CLASS",
+          "lbl" : "pericardial cavity (mouse)"
+        },
+        {
+          "id" : "EMAPA:16131",
+          "type" : "CLASS",
+          "lbl" : "pericardial component"
+        },
+        {
+          "id" : "EMAPA:16132",
+          "type" : "CLASS",
+          "lbl" : "pericardial cavity"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0001074-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16131",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16132",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001074-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0001074-mouse",
+            "EMAPA:16132"
+          ]
+        }
+      ]
+    }
+  ]
+}

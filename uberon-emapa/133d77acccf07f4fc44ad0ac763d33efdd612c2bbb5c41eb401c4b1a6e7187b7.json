@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:133d77acccf07f4fc44ad0ac763d33efdd612c2bbb5c41eb401c4b1a6e7187b7",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16325",
+          "type" : "CLASS",
+          "lbl" : "optic pit"
+        },
+        {
+          "id" : "UBERON:0006270-mouse",
+          "type" : "CLASS",
+          "lbl" : "optic pit (mouse)"
+        },
+        {
+          "id" : "EMAPA:16199",
+          "type" : "CLASS",
+          "lbl" : "optic sulcus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16325",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006270-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0006270-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16199",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16325",
+            "UBERON:0006270-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

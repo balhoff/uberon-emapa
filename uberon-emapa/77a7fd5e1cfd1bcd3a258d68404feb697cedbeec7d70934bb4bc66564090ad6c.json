@@ -1,0 +1,93 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:77a7fd5e1cfd1bcd3a258d68404feb697cedbeec7d70934bb4bc66564090ad6c",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17943",
+          "type" : "CLASS",
+          "lbl" : "upper jaw molar epithelium"
+        },
+        {
+          "id" : "UBERON:0005653-mouse",
+          "type" : "CLASS",
+          "lbl" : "upper jaw molar epithelium (mouse)"
+        },
+        {
+          "id" : "UBERON:0003235-mouse",
+          "type" : "CLASS",
+          "lbl" : "epithelium of upper jaw (mouse)"
+        },
+        {
+          "id" : "EMAPA:18971",
+          "type" : "CLASS",
+          "lbl" : "upper jaw gum epithelium"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17943",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005653-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17943",
+          "pred" : "is_a",
+          "obj" : "UBERON:0003235-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18971",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003235-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005653-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0003235-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0005653-mouse",
+            "EMAPA:17943"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:18971",
+            "UBERON:0003235-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

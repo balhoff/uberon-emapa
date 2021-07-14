@@ -1,0 +1,102 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d74938c90b50bab2b7007cd0b10a905813d18e79dfbc8da57250677343e224b2",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17157",
+          "type" : "CLASS",
+          "lbl" : "sympathetic ganglion"
+        },
+        {
+          "id" : "UBERON:0001806-mouse",
+          "type" : "CLASS",
+          "lbl" : "sympathetic ganglion (mouse)"
+        },
+        {
+          "id" : "UBERON:0001805-mouse",
+          "type" : "CLASS",
+          "lbl" : "autonomic ganglion (mouse)"
+        },
+        {
+          "id" : "EMAPA:18221",
+          "type" : "CLASS",
+          "lbl" : "autonomic ganglion"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17157",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:18221",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17157",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001806-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18221",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001805-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001806-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0001805-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17157",
+          "pred" : "is_a",
+          "obj" : "UBERON:0001805-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17157",
+            "UBERON:0001806-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:18221",
+            "UBERON:0001805-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:154f34aa8b241e5a7ac27fcbb6a68d5d796c20003d299783387a8bdc7973eb1c",
+      "nodes" : [
+        {
+          "id" : "UBERON:0009676-mouse",
+          "type" : "CLASS",
+          "lbl" : "early telencephalic vesicle (mouse)"
+        },
+        {
+          "id" : "EMAPA:16914",
+          "type" : "CLASS",
+          "lbl" : "lateral ventricle"
+        },
+        {
+          "id" : "UBERON:0002285-mouse",
+          "type" : "CLASS",
+          "lbl" : "telencephalic ventricle (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0009676-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16914",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16914",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002285-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0002285-mouse",
+            "EMAPA:16914"
+          ]
+        }
+      ]
+    }
+  ]
+}

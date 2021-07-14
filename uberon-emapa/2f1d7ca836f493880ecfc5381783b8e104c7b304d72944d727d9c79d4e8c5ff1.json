@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2f1d7ca836f493880ecfc5381783b8e104c7b304d72944d727d9c79d4e8c5ff1",
+      "nodes" : [
+        {
+          "id" : "UBERON:0006631-mouse",
+          "type" : "CLASS",
+          "lbl" : "right atrium auricular region (mouse)"
+        },
+        {
+          "id" : "EMAPA:16824",
+          "type" : "CLASS",
+          "lbl" : "right auricular region"
+        },
+        {
+          "id" : "EMAPA:17322",
+          "type" : "CLASS",
+          "lbl" : "right atrium auricular region"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0006631-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16824",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17322",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006631-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17322",
+            "UBERON:0006631-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

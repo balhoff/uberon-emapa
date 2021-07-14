@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:565f53fa4cfb820a66e09bb02d9bf3a82743d8a899c9ef8c9692152ceac495d4",
+      "nodes" : [
+        {
+          "id" : "UBERON:0005472-mouse",
+          "type" : "CLASS",
+          "lbl" : "right vitelline vein (mouse)"
+        },
+        {
+          "id" : "EMAPA:16699",
+          "type" : "CLASS",
+          "lbl" : "right vitelline vein embryonic part"
+        },
+        {
+          "id" : "EMAPA:16381",
+          "type" : "CLASS",
+          "lbl" : "right vitelline vein extraembryonic part"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0005472-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16699",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16381",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005472-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0005472-mouse",
+            "EMAPA:16381"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:faacc1b184f7ae0b43e49250fb249cc78d3d75718ba42d0ce26b99f21db73813",
+      "nodes" : [
+        {
+          "id" : "UBERON:0003422-mouse",
+          "type" : "CLASS",
+          "lbl" : "mesenchyme of umbilical cord (mouse)"
+        },
+        {
+          "id" : "EMAPA:26127",
+          "type" : "CLASS",
+          "lbl" : "umbilical cord mesenchyme"
+        },
+        {
+          "id" : "EMAPA:35925",
+          "type" : "CLASS",
+          "lbl" : "Wharton's jelly"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0003422-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:26127",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35925",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003422-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0003422-mouse",
+            "EMAPA:35925"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ac76f56f6139928fe6981006832d2d8bbe16f3841b79206443764c5bf501e005",
+      "nodes" : [
+        {
+          "id" : "UBERON:0001325-mouse",
+          "type" : "CLASS",
+          "lbl" : "muscle of pelvis (mouse)"
+        },
+        {
+          "id" : "EMAPA:37481",
+          "type" : "CLASS",
+          "lbl" : "pelvis muscle"
+        },
+        {
+          "id" : "UBERON:0001497-mouse",
+          "type" : "CLASS",
+          "lbl" : "muscle of pelvic girdle (mouse)"
+        },
+        {
+          "id" : "EMAPA:18184",
+          "type" : "CLASS",
+          "lbl" : "pelvic girdle musculature"
+        },
+        {
+          "id" : "EMAPA:18185",
+          "type" : "CLASS",
+          "lbl" : "pelvic girdle muscle"
+        },
+        {
+          "id" : "UBERON:0004470-mouse",
+          "type" : "CLASS",
+          "lbl" : "musculature of pelvic girdle (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:18184",
+          "pred" : "is_a",
+          "obj" : "UBERON:0001325-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:37481",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001325-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18184",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004470-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18185",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001497-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001497-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0001325-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18184",
+          "pred" : "is_a",
+          "obj" : "UBERON:0001497-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0001497-mouse",
+            "EMAPA:18185"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:37481",
+            "UBERON:0001325-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:18184",
+            "UBERON:0004470-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:15b621cddcf169f0228cba5ebc046b48b00750dfb8e671bfb1985b064872c5b5",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16748",
+          "type" : "CLASS",
+          "lbl" : "tail"
+        },
+        {
+          "id" : "UBERON:0007812-mouse",
+          "type" : "CLASS",
+          "lbl" : "post-anal tail (mouse)"
+        },
+        {
+          "id" : "UBERON:0007144-mouse",
+          "type" : "CLASS",
+          "lbl" : "embryonic post-anal tail (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16748",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0007812-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0007144-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16748",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0007812-mouse",
+            "EMAPA:16748"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:769fba2c6f744b2ee17a4f1788b0372e36c4eb86326904bbfd0a920e7d9d819e",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16775",
+          "type" : "CLASS",
+          "lbl" : "pleura"
+        },
+        {
+          "id" : "UBERON:0003390-mouse",
+          "type" : "CLASS",
+          "lbl" : "mesothelium of pleural cavity (mouse)"
+        },
+        {
+          "id" : "UBERON:0000977-mouse",
+          "type" : "CLASS",
+          "lbl" : "pleura (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16775",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003390-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0000977-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16775",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16775",
+            "UBERON:0003390-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

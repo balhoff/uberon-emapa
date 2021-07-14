@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f7d824940c86695d6bcbb6ffb5eae9c18a9bde52463b2243acd437fb00e4a6c1",
+      "nodes" : [
+        {
+          "id" : "EMAPA:27621",
+          "type" : "CLASS",
+          "lbl" : "cap mesenchyme"
+        },
+        {
+          "id" : "UBERON:0005107-mouse",
+          "type" : "CLASS",
+          "lbl" : "metanephric cap (mouse)"
+        },
+        {
+          "id" : "EMAPA:17953",
+          "type" : "CLASS",
+          "lbl" : "nephrogenic interstitium"
+        },
+        {
+          "id" : "UBERON:0010531-mouse",
+          "type" : "CLASS",
+          "lbl" : "metanephros induced blastemal cells (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:27621",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005107-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17953",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0010531-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0010531-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:27621",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0005107-mouse",
+            "EMAPA:27621"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:17953",
+            "UBERON:0010531-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

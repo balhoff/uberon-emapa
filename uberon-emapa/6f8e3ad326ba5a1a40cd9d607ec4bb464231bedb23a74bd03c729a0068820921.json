@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6f8e3ad326ba5a1a40cd9d607ec4bb464231bedb23a74bd03c729a0068820921",
+      "nodes" : [
+        {
+          "id" : "EMAPA:18206",
+          "type" : "CLASS",
+          "lbl" : "diencephalon internal capsule"
+        },
+        {
+          "id" : "UBERON:0001887-mouse",
+          "type" : "CLASS",
+          "lbl" : "internal capsule of telencephalon (mouse)"
+        },
+        {
+          "id" : "EMAPA:35437",
+          "type" : "CLASS",
+          "lbl" : "cerebral internal capsule"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:18206",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001887-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001887-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35437",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:18206",
+            "UBERON:0001887-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:df9e24b17717fa87ccf198d83dce4cd55de84ffa3cf1e91aa5f31fb348eabc90",
+      "nodes" : [
+        {
+          "id" : "UBERON:0001343-mouse",
+          "type" : "CLASS",
+          "lbl" : "seminiferous tubule of testis (mouse)"
+        },
+        {
+          "id" : "EMAPA:18685",
+          "type" : "CLASS",
+          "lbl" : "seminiferous cord"
+        },
+        {
+          "id" : "EMAPA:31476",
+          "type" : "CLASS",
+          "lbl" : "seminiferous tubule"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0001343-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18685",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:31476",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001343-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0001343-mouse",
+            "EMAPA:31476"
+          ]
+        }
+      ]
+    }
+  ]
+}

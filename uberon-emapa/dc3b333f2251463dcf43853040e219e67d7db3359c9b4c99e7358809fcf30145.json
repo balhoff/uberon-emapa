@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dc3b333f2251463dcf43853040e219e67d7db3359c9b4c99e7358809fcf30145",
+      "nodes" : [
+        {
+          "id" : "EMAPA:18329",
+          "type" : "CLASS",
+          "lbl" : "labial fold"
+        },
+        {
+          "id" : "UBERON:0011755-mouse",
+          "type" : "CLASS",
+          "lbl" : "female labial swelling (mouse)"
+        },
+        {
+          "id" : "EMAPA:30423",
+          "type" : "CLASS",
+          "lbl" : "labial swelling"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:18329",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0011755-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0011755-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:30423",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0011755-mouse",
+            "EMAPA:18329"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0dd768e1fa9ed8a6aaeb433f12d3cb190d228b6fc343674245fac08d388ac79f",
+      "nodes" : [
+        {
+          "id" : "UBERON:0003566-mouse",
+          "type" : "CLASS",
+          "lbl" : "head connective tissue (mouse)"
+        },
+        {
+          "id" : "EMAPA:16098",
+          "type" : "CLASS",
+          "lbl" : "head mesenchyme"
+        },
+        {
+          "id" : "UBERON:0005253-mouse",
+          "type" : "CLASS",
+          "lbl" : "head mesenchyme (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0003566-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16098",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16098",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005253-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16098",
+            "UBERON:0005253-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

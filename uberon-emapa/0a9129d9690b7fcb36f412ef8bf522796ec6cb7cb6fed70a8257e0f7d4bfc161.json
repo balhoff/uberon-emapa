@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0a9129d9690b7fcb36f412ef8bf522796ec6cb7cb6fed70a8257e0f7d4bfc161",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17656",
+          "type" : "CLASS",
+          "lbl" : "left lung lobar bronchus"
+        },
+        {
+          "id" : "UBERON:0003405-mouse",
+          "type" : "CLASS",
+          "lbl" : "lobar bronchus of left lung (mouse)"
+        },
+        {
+          "id" : "EMAPA:17388",
+          "type" : "CLASS",
+          "lbl" : "left lung rudiment lobar bronchus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17656",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003405-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003405-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17388",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17656",
+            "UBERON:0003405-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9836ac76f56810603fe6cb4771c98c0286105d9b75c5447a53499704724e9543",
+      "nodes" : [
+        {
+          "id" : "EMAPA:35382",
+          "type" : "CLASS",
+          "lbl" : "gonad germinal epithelium"
+        },
+        {
+          "id" : "UBERON:0005890-mouse",
+          "type" : "CLASS",
+          "lbl" : "gonad germinal epithelium (mouse)"
+        },
+        {
+          "id" : "EMAPA:17384",
+          "type" : "CLASS",
+          "lbl" : "coelomic epithelium of gonad"
+        },
+        {
+          "id" : "EMAPA:27564",
+          "type" : "CLASS",
+          "lbl" : "coelomic epithelium of gonad primordium"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:35382",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005890-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005890-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17384",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005890-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:27564",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0005890-mouse",
+            "EMAPA:35382"
+          ]
+        }
+      ]
+    }
+  ]
+}

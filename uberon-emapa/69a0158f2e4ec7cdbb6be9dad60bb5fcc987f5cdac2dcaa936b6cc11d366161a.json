@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:69a0158f2e4ec7cdbb6be9dad60bb5fcc987f5cdac2dcaa936b6cc11d366161a",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16111",
+          "type" : "CLASS",
+          "lbl" : "amnion mesoderm"
+        },
+        {
+          "id" : "UBERON:0003262-mouse",
+          "type" : "CLASS",
+          "lbl" : "amniotic mesoderm (mouse)"
+        },
+        {
+          "id" : "EMAPA:16265",
+          "type" : "CLASS",
+          "lbl" : "amnion mesenchyme"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16111",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003262-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003262-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16265",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16111",
+            "UBERON:0003262-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

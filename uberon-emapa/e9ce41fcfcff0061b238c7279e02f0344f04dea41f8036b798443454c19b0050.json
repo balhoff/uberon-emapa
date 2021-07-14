@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e9ce41fcfcff0061b238c7279e02f0344f04dea41f8036b798443454c19b0050",
+      "nodes" : [
+        {
+          "id" : "EMAPA:32884",
+          "type" : "CLASS",
+          "lbl" : "vestibular component epithelium"
+        },
+        {
+          "id" : "UBERON:0006932-mouse",
+          "type" : "CLASS",
+          "lbl" : "vestibular epithelium (mouse)"
+        },
+        {
+          "id" : "EMAPA:35921",
+          "type" : "CLASS",
+          "lbl" : "vestibular epithelium"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:32884",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006932-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0006932-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35921",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0006932-mouse",
+            "EMAPA:32884"
+          ]
+        }
+      ]
+    }
+  ]
+}

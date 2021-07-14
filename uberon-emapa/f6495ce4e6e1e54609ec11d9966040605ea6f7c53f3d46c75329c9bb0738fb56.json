@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f6495ce4e6e1e54609ec11d9966040605ea6f7c53f3d46c75329c9bb0738fb56",
+      "nodes" : [
+        {
+          "id" : "UBERON:0005661-mouse",
+          "type" : "CLASS",
+          "lbl" : "3rd arch ectoderm (mouse)"
+        },
+        {
+          "id" : "EMAPA:16584",
+          "type" : "CLASS",
+          "lbl" : "3rd branchial membrane ectoderm"
+        },
+        {
+          "id" : "EMAPA:16582",
+          "type" : "CLASS",
+          "lbl" : "3rd branchial groove ectoderm"
+        },
+        {
+          "id" : "EMAPA:16400",
+          "type" : "CLASS",
+          "lbl" : "3rd branchial arch ectoderm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0005661-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16584",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005661-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16582",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16400",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005661-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0005661-mouse",
+            "EMAPA:16400"
+          ]
+        }
+      ]
+    }
+  ]
+}

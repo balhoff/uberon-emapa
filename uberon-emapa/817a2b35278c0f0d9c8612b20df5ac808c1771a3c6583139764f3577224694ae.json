@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:817a2b35278c0f0d9c8612b20df5ac808c1771a3c6583139764f3577224694ae",
+      "nodes" : [
+        {
+          "id" : "EMAPA:35568",
+          "type" : "CLASS",
+          "lbl" : "metatarsus mesenchyme"
+        },
+        {
+          "id" : "UBERON:0010687-mouse",
+          "type" : "CLASS",
+          "lbl" : "pedal digit metatarsal pre-cartilage condensation (mouse)"
+        },
+        {
+          "id" : "EMAPA:32956",
+          "type" : "CLASS",
+          "lbl" : "metatarsus pre-cartilage condensation"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:35568",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0010687-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0010687-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32956",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35568",
+            "UBERON:0010687-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

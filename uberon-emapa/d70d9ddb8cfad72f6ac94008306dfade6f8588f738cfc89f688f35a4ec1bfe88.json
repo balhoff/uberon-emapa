@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d70d9ddb8cfad72f6ac94008306dfade6f8588f738cfc89f688f35a4ec1bfe88",
+      "nodes" : [
+        {
+          "id" : "EMAPA:32672",
+          "type" : "CLASS",
+          "lbl" : "amygdala"
+        },
+        {
+          "id" : "UBERON:0001876-mouse",
+          "type" : "CLASS",
+          "lbl" : "amygdala (mouse)"
+        },
+        {
+          "id" : "EMAPA:36051",
+          "type" : "CLASS",
+          "lbl" : "amygdaloid nucleus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:32672",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001876-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001876-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:36051",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:32672",
+            "UBERON:0001876-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

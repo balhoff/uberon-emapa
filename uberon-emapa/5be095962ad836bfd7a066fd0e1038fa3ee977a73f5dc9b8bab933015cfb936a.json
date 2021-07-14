@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5be095962ad836bfd7a066fd0e1038fa3ee977a73f5dc9b8bab933015cfb936a",
+      "nodes" : [
+        {
+          "id" : "EMAPA:32815",
+          "type" : "CLASS",
+          "lbl" : "peripheral nerve"
+        },
+        {
+          "id" : "UBERON:0001021-mouse",
+          "type" : "CLASS",
+          "lbl" : "nerve (mouse)"
+        },
+        {
+          "id" : "EMAPA:32808",
+          "type" : "CLASS",
+          "lbl" : "nerve"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:32815",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001021-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001021-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32808",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:32815",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:32808",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:32815",
+            "UBERON:0001021-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

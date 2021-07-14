@@ -1,0 +1,102 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:85f343a9563f1de6a8ab36d6bb0ac1687a4de3e102fc9b72a0ab9cd6b9c29189",
+      "nodes" : [
+        {
+          "id" : "UBERON:0002320-mouse",
+          "type" : "CLASS",
+          "lbl" : "glomerular mesangium (mouse)"
+        },
+        {
+          "id" : "EMAPA:36561",
+          "type" : "CLASS",
+          "lbl" : "mesangium"
+        },
+        {
+          "id" : "EMAPA:28248",
+          "type" : "CLASS",
+          "lbl" : "glomerular mesangium of glomerular tuft"
+        },
+        {
+          "id" : "UBERON:0002319-mouse",
+          "type" : "CLASS",
+          "lbl" : "mesangium (mouse)"
+        },
+        {
+          "id" : "EMAPA:27961",
+          "type" : "CLASS",
+          "lbl" : "glomerular mesangium of maturing glomerular tuft"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:28248",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002320-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0002319-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:28248",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:36561",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002319-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0002320-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:27961",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0002320-mouse",
+            "EMAPA:28248"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:36561",
+            "UBERON:0002319-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

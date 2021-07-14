@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bf82a4659979775e66938c4f68c960e0ffb8b27bdd22bd049571109e5e077223",
+      "nodes" : [
+        {
+          "id" : "EMAPA:32845",
+          "type" : "CLASS",
+          "lbl" : "hippocampus"
+        },
+        {
+          "id" : "UBERON:0001954-mouse",
+          "type" : "CLASS",
+          "lbl" : "Ammon's horn (mouse)"
+        },
+        {
+          "id" : "EMAPA:32772",
+          "type" : "CLASS",
+          "lbl" : "hippocampus region"
+        },
+        {
+          "id" : "UBERON:0003876-mouse",
+          "type" : "CLASS",
+          "lbl" : "hippocampal field (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:32845",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001954-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:32772",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003876-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001954-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32772",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:32845",
+            "UBERON:0001954-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:32772",
+            "UBERON:0003876-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

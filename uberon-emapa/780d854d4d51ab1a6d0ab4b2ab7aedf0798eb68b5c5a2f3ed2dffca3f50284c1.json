@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:780d854d4d51ab1a6d0ab4b2ab7aedf0798eb68b5c5a2f3ed2dffca3f50284c1",
+      "nodes" : [
+        {
+          "id" : "UBERON:0006699-mouse",
+          "type" : "CLASS",
+          "lbl" : "foramen cecum of tongue (mouse)"
+        },
+        {
+          "id" : "EMAPA:17069",
+          "type" : "CLASS",
+          "lbl" : "foramen caecum"
+        },
+        {
+          "id" : "UBERON:0001761-mouse",
+          "type" : "CLASS",
+          "lbl" : "future foramen cecum (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0006699-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17069",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17069",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001761-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17069",
+            "UBERON:0001761-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5f43c1a35aa9255fe7c26088ffa95df691ec7acbc2211fbe8617cce591cc6c7e",
+      "nodes" : [
+        {
+          "id" : "EMAPA:19019",
+          "type" : "CLASS",
+          "lbl" : "facial bone"
+        },
+        {
+          "id" : "UBERON:0003462-mouse",
+          "type" : "CLASS",
+          "lbl" : "facial bone (mouse)"
+        },
+        {
+          "id" : "EMAPA:35924",
+          "type" : "CLASS",
+          "lbl" : "viscerocranium bone"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:19019",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003462-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:19019",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:35924",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003462-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35924",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0003462-mouse",
+            "EMAPA:19019"
+          ]
+        }
+      ]
+    }
+  ]
+}

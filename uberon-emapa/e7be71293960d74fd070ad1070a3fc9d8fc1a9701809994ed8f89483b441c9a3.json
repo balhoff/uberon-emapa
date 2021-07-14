@@ -1,0 +1,102 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e7be71293960d74fd070ad1070a3fc9d8fc1a9701809994ed8f89483b441c9a3",
+      "nodes" : [
+        {
+          "id" : "EMAPA:37289",
+          "type" : "CLASS",
+          "lbl" : "limb digit 5"
+        },
+        {
+          "id" : "UBERON:0006052-mouse",
+          "type" : "CLASS",
+          "lbl" : "digit 5 (mouse)"
+        },
+        {
+          "id" : "EMAPA:17441",
+          "type" : "CLASS",
+          "lbl" : "forelimb digit 5"
+        },
+        {
+          "id" : "UBERON:0003625-mouse",
+          "type" : "CLASS",
+          "lbl" : "manual digit 5 (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17441",
+          "pred" : "is_a",
+          "obj" : "UBERON:0006052-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:37289",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006052-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17441",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:37289",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003625-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0006052-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17441",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003625-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0006052-mouse",
+            "EMAPA:37289"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0003625-mouse",
+            "EMAPA:17441"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f1d8c16f99a8377528c3b2a49d6b0f854c4b555ade675eeb28b589b98ccc8025",
+      "nodes" : [
+        {
+          "id" : "UBERON:0003316-mouse",
+          "type" : "CLASS",
+          "lbl" : "mesenchyme of yolk sac (mouse)"
+        },
+        {
+          "id" : "EMAPA:16087",
+          "type" : "CLASS",
+          "lbl" : "yolk sac mesoderm"
+        },
+        {
+          "id" : "EMAPA:16267",
+          "type" : "CLASS",
+          "lbl" : "yolk sac mesenchyme"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0003316-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16087",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16267",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003316-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0003316-mouse",
+            "EMAPA:16267"
+          ]
+        }
+      ]
+    }
+  ]
+}

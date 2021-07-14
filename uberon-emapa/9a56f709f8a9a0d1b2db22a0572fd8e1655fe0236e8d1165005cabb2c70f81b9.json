@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9a56f709f8a9a0d1b2db22a0572fd8e1655fe0236e8d1165005cabb2c70f81b9",
+      "nodes" : [
+        {
+          "id" : "EMAPA:29307",
+          "type" : "CLASS",
+          "lbl" : "male inguinal ring"
+        },
+        {
+          "id" : "UBERON:0006674-mouse",
+          "type" : "CLASS",
+          "lbl" : "inguinal ring (mouse)"
+        },
+        {
+          "id" : "UBERON:0018530-mouse",
+          "type" : "CLASS",
+          "lbl" : "male inguinal ring (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:29307",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006674-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0018530-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0006674-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0018530-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:29307",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0006674-mouse",
+            "EMAPA:29307"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e4af7e1ec52ca7d3aa2f288766a3ae59bbb9ac449a9a2afaec060f1022c1a501",
+      "nodes" : [
+        {
+          "id" : "UBERON:0005666-mouse",
+          "type" : "CLASS",
+          "lbl" : "4th arch endoderm (mouse)"
+        },
+        {
+          "id" : "EMAPA:16765",
+          "type" : "CLASS",
+          "lbl" : "4th branchial membrane endoderm"
+        },
+        {
+          "id" : "EMAPA:16767",
+          "type" : "CLASS",
+          "lbl" : "4th branchial pouch endoderm"
+        },
+        {
+          "id" : "EMAPA:16769",
+          "type" : "CLASS",
+          "lbl" : "4th branchial arch endoderm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0005666-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16765",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005666-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16767",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16769",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005666-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16769",
+            "UBERON:0005666-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

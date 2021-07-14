@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:955844e2a19a4212ae62e1727b417c50c29d50601d52cae9d1cc6cc507aa0ea6",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16737",
+          "type" : "CLASS",
+          "lbl" : "respiratory tract"
+        },
+        {
+          "id" : "UBERON:0000072-mouse",
+          "type" : "CLASS",
+          "lbl" : "proximo-distal subdivision of respiratory tract (mouse)"
+        },
+        {
+          "id" : "UBERON:0000065-mouse",
+          "type" : "CLASS",
+          "lbl" : "respiratory tract (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16737",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0000072-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0000065-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16737",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0000072-mouse",
+            "EMAPA:16737"
+          ]
+        }
+      ]
+    }
+  ]
+}

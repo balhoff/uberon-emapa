@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7b31a61c514e822b5758e1cd46deefa67921cca688d8ddd54bb79f1d4335bd54",
+      "nodes" : [
+        {
+          "id" : "UBERON:0007213-mouse",
+          "type" : "CLASS",
+          "lbl" : "mesenchyme derived from head neural crest (mouse)"
+        },
+        {
+          "id" : "EMAPA:16169",
+          "type" : "CLASS",
+          "lbl" : "head mesenchyme derived from neural crest"
+        },
+        {
+          "id" : "EMAPA:16271",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0007213-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16169",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16271",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0007213-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0007213-mouse",
+            "EMAPA:16271"
+          ]
+        }
+      ]
+    }
+  ]
+}

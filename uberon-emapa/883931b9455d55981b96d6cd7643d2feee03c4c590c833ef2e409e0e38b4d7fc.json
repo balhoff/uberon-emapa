@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:883931b9455d55981b96d6cd7643d2feee03c4c590c833ef2e409e0e38b4d7fc",
+      "nodes" : [
+        {
+          "id" : "UBERON:0002342-mouse",
+          "type" : "CLASS",
+          "lbl" : "neural crest (mouse)"
+        },
+        {
+          "id" : "EMAPA:32737",
+          "type" : "CLASS",
+          "lbl" : "neural crest"
+        },
+        {
+          "id" : "UBERON:0010170-mouse",
+          "type" : "CLASS",
+          "lbl" : "region of neural crest (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0002342-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32737",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:32737",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0010170-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:32737",
+            "UBERON:0010170-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

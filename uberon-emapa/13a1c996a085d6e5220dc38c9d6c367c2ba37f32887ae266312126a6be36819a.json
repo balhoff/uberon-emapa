@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:13a1c996a085d6e5220dc38c9d6c367c2ba37f32887ae266312126a6be36819a",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17855",
+          "type" : "CLASS",
+          "lbl" : "common carotid artery"
+        },
+        {
+          "id" : "UBERON:0001530-mouse",
+          "type" : "CLASS",
+          "lbl" : "common carotid artery plus branches (mouse)"
+        },
+        {
+          "id" : "UBERON:0010197-mouse",
+          "type" : "CLASS",
+          "lbl" : "trunk of common carotid artery (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17855",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001530-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0010197-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17855",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17855",
+            "UBERON:0001530-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:675652509bdc394819e3b5b11c9222280c17ba8afefb46a9af6cc11e2c1c2dd0",
+      "nodes" : [
+        {
+          "id" : "UBERON:0003853-mouse",
+          "type" : "CLASS",
+          "lbl" : "spinal cord neural crest (mouse)"
+        },
+        {
+          "id" : "EMAPA:16163",
+          "type" : "CLASS",
+          "lbl" : "future spinal cord neural crest"
+        },
+        {
+          "id" : "EMAPA:16881",
+          "type" : "CLASS",
+          "lbl" : "tail neural crest"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0003853-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16163",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16881",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003853-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16881",
+            "UBERON:0003853-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

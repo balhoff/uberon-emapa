@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0a48924faf9139a578dcb895b5f7f687a88229db005e828d7875a91f5922557b",
+      "nodes" : [
+        {
+          "id" : "EMAPA:28328",
+          "type" : "CLASS",
+          "lbl" : "thin ascending limb of outer medulla"
+        },
+        {
+          "id" : "UBERON:0004193-mouse",
+          "type" : "CLASS",
+          "lbl" : "loop of Henle ascending limb thin segment (mouse)"
+        },
+        {
+          "id" : "EMAPA:28361",
+          "type" : "CLASS",
+          "lbl" : "thin ascending limb of inner medulla"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:28328",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004193-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0004193-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:28361",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:28328",
+            "UBERON:0004193-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

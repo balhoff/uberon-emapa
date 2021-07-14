@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fc8c0f0a1eb9c963784d3c02456ba619ad4d363abde63898efead70d1b3bed52",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16754",
+          "type" : "CLASS",
+          "lbl" : "tail central nervous system"
+        },
+        {
+          "id" : "UBERON:0001017-mouse",
+          "type" : "CLASS",
+          "lbl" : "central nervous system (mouse)"
+        },
+        {
+          "id" : "EMAPA:16470",
+          "type" : "CLASS",
+          "lbl" : "central nervous system"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16754",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001017-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001017-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16470",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16754",
+            "UBERON:0001017-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

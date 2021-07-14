@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eda117ea56bc7340b736a5fa224ad4f5e1e8630ea0bb347303e0dcbe167a6d7f",
+      "nodes" : [
+        {
+          "id" : "EMAPA:25149",
+          "type" : "CLASS",
+          "lbl" : "tail segmental spinal nerve"
+        },
+        {
+          "id" : "EMAPA:16990",
+          "type" : "CLASS",
+          "lbl" : "segmental spinal nerve"
+        },
+        {
+          "id" : "UBERON:0005197-mouse",
+          "type" : "CLASS",
+          "lbl" : "segmental spinal nerve (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:25149",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:16990",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:25149",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005197-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005197-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16990",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0005197-mouse",
+            "EMAPA:25149"
+          ]
+        }
+      ]
+    }
+  ]
+}

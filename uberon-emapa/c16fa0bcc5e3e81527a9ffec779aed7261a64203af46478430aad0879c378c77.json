@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c16fa0bcc5e3e81527a9ffec779aed7261a64203af46478430aad0879c378c77",
+      "nodes" : [
+        {
+          "id" : "UBERON:0003332-mouse",
+          "type" : "CLASS",
+          "lbl" : "submucosa of duodenum (mouse)"
+        },
+        {
+          "id" : "EMAPA:27027",
+          "type" : "CLASS",
+          "lbl" : "duodenum rostral part submucosa"
+        },
+        {
+          "id" : "EMAPA:27097",
+          "type" : "CLASS",
+          "lbl" : "duodenum caudal part submucosa"
+        },
+        {
+          "id" : "EMAPA:27239",
+          "type" : "CLASS",
+          "lbl" : "duodenum submucosa"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0003332-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:27027",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:27097",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003332-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003332-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:27239",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:27097",
+            "UBERON:0003332-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:49c4fbbbadeb70bc98d54f6cabd4485b68c90e52ba462996fdd7bc51225c162a",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16773",
+          "type" : "CLASS",
+          "lbl" : "pleural component"
+        },
+        {
+          "id" : "UBERON:0002402-mouse",
+          "type" : "CLASS",
+          "lbl" : "pleural cavity (mouse)"
+        },
+        {
+          "id" : "EMAPA:16774",
+          "type" : "CLASS",
+          "lbl" : "pleural cavity"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16773",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002402-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0002402-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16774",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0002402-mouse",
+            "EMAPA:16773"
+          ]
+        }
+      ]
+    }
+  ]
+}

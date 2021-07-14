@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e4e66fdbb06d7be6160a94c75228f5783a56214786d02c9f2808ce8e7b6435ab",
+      "nodes" : [
+        {
+          "id" : "EMAPA:32713",
+          "type" : "CLASS",
+          "lbl" : "cerebral cortex marginal zone"
+        },
+        {
+          "id" : "UBERON:0014935-mouse",
+          "type" : "CLASS",
+          "lbl" : "cerebral cortex marginal layer (mouse)"
+        },
+        {
+          "id" : "EMAPA:17546",
+          "type" : "CLASS",
+          "lbl" : "cerebral cortex marginal layer"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:32713",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0014935-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0014935-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17546",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:32713",
+            "UBERON:0014935-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

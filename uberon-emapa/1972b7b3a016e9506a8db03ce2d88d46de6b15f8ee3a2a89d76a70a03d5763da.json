@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1972b7b3a016e9506a8db03ce2d88d46de6b15f8ee3a2a89d76a70a03d5763da",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17680",
+          "type" : "CLASS",
+          "lbl" : "cranium"
+        },
+        {
+          "id" : "UBERON:0003129-mouse",
+          "type" : "CLASS",
+          "lbl" : "skull (mouse)"
+        },
+        {
+          "id" : "UBERON:0003128-mouse",
+          "type" : "CLASS",
+          "lbl" : "cranium (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17680",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003129-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003128-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17680",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17680",
+            "UBERON:0003129-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

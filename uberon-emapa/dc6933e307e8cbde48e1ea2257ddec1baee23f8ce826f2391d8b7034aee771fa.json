@@ -1,0 +1,93 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dc6933e307e8cbde48e1ea2257ddec1baee23f8ce826f2391d8b7034aee771fa",
+      "nodes" : [
+        {
+          "id" : "EMAPA:18334",
+          "type" : "CLASS",
+          "lbl" : "larynx mucous membrane"
+        },
+        {
+          "id" : "UBERON:0004785-mouse",
+          "type" : "CLASS",
+          "lbl" : "respiratory system mucosa (mouse)"
+        },
+        {
+          "id" : "EMAPA:37577",
+          "type" : "CLASS",
+          "lbl" : "respiratory system mucosa"
+        },
+        {
+          "id" : "UBERON:0001824-mouse",
+          "type" : "CLASS",
+          "lbl" : "mucosa of larynx (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:18334",
+          "pred" : "is_a",
+          "obj" : "UBERON:0004785-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:37577",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004785-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18334",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001824-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001824-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0004785-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:37577",
+            "UBERON:0004785-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:18334",
+            "UBERON:0001824-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

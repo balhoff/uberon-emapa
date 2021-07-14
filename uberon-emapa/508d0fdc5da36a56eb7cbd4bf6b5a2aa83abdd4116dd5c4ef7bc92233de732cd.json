@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:508d0fdc5da36a56eb7cbd4bf6b5a2aa83abdd4116dd5c4ef7bc92233de732cd",
+      "nodes" : [
+        {
+          "id" : "UBERON:0004572-mouse",
+          "type" : "CLASS",
+          "lbl" : "arterial system (mouse)"
+        },
+        {
+          "id" : "EMAPA:16201",
+          "type" : "CLASS",
+          "lbl" : "arterial system"
+        },
+        {
+          "id" : "EMAPA:16371",
+          "type" : "CLASS",
+          "lbl" : "extraembryonic arterial system"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0004572-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16201",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16371",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004572-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16371",
+            "UBERON:0004572-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

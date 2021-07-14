@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2c8ab2ac1cf8154209a2332e61639be9df79eec89763ab8b222457b1322ff701",
+      "nodes" : [
+        {
+          "id" : "UBERON:0005097-mouse",
+          "type" : "CLASS",
+          "lbl" : "renal connecting tubule (mouse)"
+        },
+        {
+          "id" : "EMAPA:27758",
+          "type" : "CLASS",
+          "lbl" : "renal connecting tubule of s-shaped body"
+        },
+        {
+          "id" : "EMAPA:27790",
+          "type" : "CLASS",
+          "lbl" : "renal connecting tubule of capillary loop nephron"
+        },
+        {
+          "id" : "EMAPA:28011",
+          "type" : "CLASS",
+          "lbl" : "renal connecting tubule"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0005097-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:27758",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005097-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:27790",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:28011",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005097-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:28011",
+            "UBERON:0005097-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

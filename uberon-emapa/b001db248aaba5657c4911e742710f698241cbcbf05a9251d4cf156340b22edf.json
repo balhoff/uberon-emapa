@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b001db248aaba5657c4911e742710f698241cbcbf05a9251d4cf156340b22edf",
+      "nodes" : [
+        {
+          "id" : "UBERON:0003304-mouse",
+          "type" : "CLASS",
+          "lbl" : "mesoderm blood island (mouse)"
+        },
+        {
+          "id" : "EMAPA:16115",
+          "type" : "CLASS",
+          "lbl" : "blood island"
+        },
+        {
+          "id" : "UBERON:0011919-mouse",
+          "type" : "CLASS",
+          "lbl" : "yolk sac blood island (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0003304-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16115",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16115",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0011919-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16115",
+            "UBERON:0011919-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:09624bc357ced9a97a16f9ad1f173a166de6574c3c58c56c0482703e2d152f2f",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16678",
+          "type" : "CLASS",
+          "lbl" : "optic stalk"
+        },
+        {
+          "id" : "UBERON:0003098-mouse",
+          "type" : "CLASS",
+          "lbl" : "optic stalk (mouse)"
+        },
+        {
+          "id" : "EMAPA:35617",
+          "type" : "CLASS",
+          "lbl" : "optic tract"
+        },
+        {
+          "id" : "UBERON:0001908-mouse",
+          "type" : "CLASS",
+          "lbl" : "optic tract (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16678",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003098-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35617",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001908-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001908-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16678",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16678",
+            "UBERON:0003098-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0001908-mouse",
+            "EMAPA:35617"
+          ]
+        }
+      ]
+    }
+  ]
+}

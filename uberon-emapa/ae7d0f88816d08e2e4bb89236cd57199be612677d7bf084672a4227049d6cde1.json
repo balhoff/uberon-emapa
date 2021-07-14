@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ae7d0f88816d08e2e4bb89236cd57199be612677d7bf084672a4227049d6cde1",
+      "nodes" : [
+        {
+          "id" : "EMAPA:19308",
+          "type" : "CLASS",
+          "lbl" : "thyroid gland right lobe colloid-filled follicles"
+        },
+        {
+          "id" : "UBERON:0005305-mouse",
+          "type" : "CLASS",
+          "lbl" : "thyroid follicle (mouse)"
+        },
+        {
+          "id" : "EMAPA:19307",
+          "type" : "CLASS",
+          "lbl" : "thyroid gland left lobe colloid-filled follicles"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:19308",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005305-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005305-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:19307",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:19308",
+            "UBERON:0005305-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

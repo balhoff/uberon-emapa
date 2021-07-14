@@ -1,0 +1,87 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:00346a16fc9a880b925273f4952d13784a0d4179c22248b233a0ff17d5b69150",
+      "nodes" : [
+        {
+          "id" : "UBERON:0004493-mouse",
+          "type" : "CLASS",
+          "lbl" : "cardiac muscle tissue of myocardium (mouse)"
+        },
+        {
+          "id" : "EMAPA:32688",
+          "type" : "CLASS",
+          "lbl" : "cardiac muscle tissue"
+        },
+        {
+          "id" : "UBERON:0002349-mouse",
+          "type" : "CLASS",
+          "lbl" : "myocardium (mouse)"
+        },
+        {
+          "id" : "UBERON:0001133-mouse",
+          "type" : "CLASS",
+          "lbl" : "cardiac muscle tissue (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0004493-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32688",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0002349-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32688",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0004493-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0001133-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:32688",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001133-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:32688",
+            "UBERON:0001133-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

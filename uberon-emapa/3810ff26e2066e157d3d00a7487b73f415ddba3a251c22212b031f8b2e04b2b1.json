@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:3810ff26e2066e157d3d00a7487b73f415ddba3a251c22212b031f8b2e04b2b1",
+      "nodes" : [
+        {
+          "id" : "EMAPA:27788",
+          "type" : "CLASS",
+          "lbl" : "early distal tubule"
+        },
+        {
+          "id" : "UBERON:0006337-mouse",
+          "type" : "CLASS",
+          "lbl" : "distal early tubule (mouse)"
+        },
+        {
+          "id" : "EMAPA:28007",
+          "type" : "CLASS",
+          "lbl" : "early distal tubule"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:27788",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006337-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0006337-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:28007",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:27788",
+            "UBERON:0006337-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:721dab15ce50388a6f087d788f8b2f41e28b1ea9d51bef476d55da5da3a1dc6f",
+      "nodes" : [
+        {
+          "id" : "UBERON:0006310-mouse",
+          "type" : "CLASS",
+          "lbl" : "vitelline venous plexus (mouse)"
+        },
+        {
+          "id" : "EMAPA:17020",
+          "type" : "CLASS",
+          "lbl" : "vitelline venous plexus"
+        },
+        {
+          "id" : "UBERON:0006309-mouse",
+          "type" : "CLASS",
+          "lbl" : "venous vitelline plexus (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0006310-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17020",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17020",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006309-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17020",
+            "UBERON:0006309-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

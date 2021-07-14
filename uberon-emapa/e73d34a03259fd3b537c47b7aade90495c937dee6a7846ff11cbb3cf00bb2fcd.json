@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e73d34a03259fd3b537c47b7aade90495c937dee6a7846ff11cbb3cf00bb2fcd",
+      "nodes" : [
+        {
+          "id" : "UBERON:0002066-mouse",
+          "type" : "CLASS",
+          "lbl" : "umbilical vein (mouse)"
+        },
+        {
+          "id" : "EMAPA:16243",
+          "type" : "CLASS",
+          "lbl" : "umbilical vein embryonic part"
+        },
+        {
+          "id" : "EMAPA:16375",
+          "type" : "CLASS",
+          "lbl" : "umbilical vein extraembryonic part"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0002066-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16243",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16375",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002066-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16375",
+            "UBERON:0002066-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

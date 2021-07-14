@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:49928915252bdc5b52d13097eec9994d392ae252910e4d5c7d1235ac46bf0d90",
+      "nodes" : [
+        {
+          "id" : "UBERON:0010509-mouse",
+          "type" : "CLASS",
+          "lbl" : "strand of pelage hair (mouse)"
+        },
+        {
+          "id" : "EMAPA:36485",
+          "type" : "CLASS",
+          "lbl" : "pelage hair"
+        },
+        {
+          "id" : "UBERON:0010166-mouse",
+          "type" : "CLASS",
+          "lbl" : "coat of hair (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0010509-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:36485",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:36485",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0010166-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0010166-mouse",
+            "EMAPA:36485"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6ccabd138d14ebcbc1c52cf8cb8fcc3f60ba538541fe8804eb4e150ee8f58089",
+      "nodes" : [
+        {
+          "id" : "EMAPA:32824",
+          "type" : "CLASS",
+          "lbl" : "rhombomere roof plate"
+        },
+        {
+          "id" : "UBERON:0005502-mouse",
+          "type" : "CLASS",
+          "lbl" : "rhombomere roof plate (mouse)"
+        },
+        {
+          "id" : "EMAPA:35367",
+          "type" : "CLASS",
+          "lbl" : "future hindbrain roof plate"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:32824",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005502-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005502-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35367",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:32824",
+            "UBERON:0005502-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

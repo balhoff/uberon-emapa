@@ -1,0 +1,149 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:637cef4cd6dbfc9a64a6a3448c502914955c59ee04df6ce34a8cef1e2e52d8cd",
+      "nodes" : [
+        {
+          "id" : "UBERON:0003561-mouse",
+          "type" : "CLASS",
+          "lbl" : "forebrain dura mater (mouse)"
+        },
+        {
+          "id" : "UBERON:0003564-mouse",
+          "type" : "CLASS",
+          "lbl" : "diencephalon dura mater (mouse)"
+        },
+        {
+          "id" : "EMAPA:17766",
+          "type" : "CLASS",
+          "lbl" : "diencephalon dura mater"
+        },
+        {
+          "id" : "UBERON:0003563-mouse",
+          "type" : "CLASS",
+          "lbl" : "telencephalon dura mater (mouse)"
+        },
+        {
+          "id" : "EMAPA:17776",
+          "type" : "CLASS",
+          "lbl" : "telencephalon dura mater"
+        },
+        {
+          "id" : "EMAPA:37545",
+          "type" : "CLASS",
+          "lbl" : "forebrain dura mater"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17776",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003563-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17766",
+          "pred" : "is_a",
+          "obj" : "UBERON:0003561-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:37545",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003561-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17776",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:37545",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17766",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003564-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003564-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0003561-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003563-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0003561-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17766",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:37545",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17766",
+            "UBERON:0003564-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:37545",
+            "UBERON:0003561-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:17776",
+            "UBERON:0003563-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

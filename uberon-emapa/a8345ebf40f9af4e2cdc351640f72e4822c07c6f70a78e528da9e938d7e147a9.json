@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a8345ebf40f9af4e2cdc351640f72e4822c07c6f70a78e528da9e938d7e147a9",
+      "nodes" : [
+        {
+          "id" : "EMAPA:35448",
+          "type" : "CLASS",
+          "lbl" : "iris muscle"
+        },
+        {
+          "id" : "UBERON:0001606-mouse",
+          "type" : "CLASS",
+          "lbl" : "muscle of iris (mouse)"
+        },
+        {
+          "id" : "UBERON:0004234-mouse",
+          "type" : "CLASS",
+          "lbl" : "iris smooth muscle (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:35448",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001606-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0004234-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35448",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35448",
+            "UBERON:0001606-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

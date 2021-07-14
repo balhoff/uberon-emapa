@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:65fac8531ac11466372772627c51181a21a21f4cde86d44d5e1d81d2b197ddb6",
+      "nodes" : [
+        {
+          "id" : "EMAPA:29046",
+          "type" : "CLASS",
+          "lbl" : "muscle layer of oviduct"
+        },
+        {
+          "id" : "UBERON:0004245-mouse",
+          "type" : "CLASS",
+          "lbl" : "oviduct smooth muscle (mouse)"
+        },
+        {
+          "id" : "UBERON:0006642-mouse",
+          "type" : "CLASS",
+          "lbl" : "muscle layer of oviduct (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:29046",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004245-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0006642-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:29046",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0004245-mouse",
+            "EMAPA:29046"
+          ]
+        }
+      ]
+    }
+  ]
+}

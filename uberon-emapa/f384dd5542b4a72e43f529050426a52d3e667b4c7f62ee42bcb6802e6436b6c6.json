@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f384dd5542b4a72e43f529050426a52d3e667b4c7f62ee42bcb6802e6436b6c6",
+      "nodes" : [
+        {
+          "id" : "UBERON:0002685-mouse",
+          "type" : "CLASS",
+          "lbl" : "anteroventral nucleus of thalamus (mouse)"
+        },
+        {
+          "id" : "EMAPA:35133",
+          "type" : "CLASS",
+          "lbl" : "anterior ventral thalamic nucleus"
+        },
+        {
+          "id" : "UBERON:0002637-mouse",
+          "type" : "CLASS",
+          "lbl" : "ventral anterior nucleus of thalamus (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0002685-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35133",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35133",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002637-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35133",
+            "UBERON:0002637-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

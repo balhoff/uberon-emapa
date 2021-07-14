@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4b0b41dd23eb077a03db76d113d132d4c8091dfb3543e8549822ceeca8399010",
+      "nodes" : [
+        {
+          "id" : "EMAPA:35933",
+          "type" : "CLASS",
+          "lbl" : "forelimb bone"
+        },
+        {
+          "id" : "UBERON:0010741-mouse",
+          "type" : "CLASS",
+          "lbl" : "bone of pectoral complex (mouse)"
+        },
+        {
+          "id" : "EMAPA:32623",
+          "type" : "CLASS",
+          "lbl" : "forelimb skeleton"
+        },
+        {
+          "id" : "UBERON:0001440-mouse",
+          "type" : "CLASS",
+          "lbl" : "forelimb skeleton (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:35933",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0010741-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0010741-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32623",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:32623",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001440-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0010741-mouse",
+            "EMAPA:35933"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0001440-mouse",
+            "EMAPA:32623"
+          ]
+        }
+      ]
+    }
+  ]
+}

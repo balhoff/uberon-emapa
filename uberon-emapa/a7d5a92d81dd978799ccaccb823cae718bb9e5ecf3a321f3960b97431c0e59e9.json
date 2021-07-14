@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a7d5a92d81dd978799ccaccb823cae718bb9e5ecf3a321f3960b97431c0e59e9",
+      "nodes" : [
+        {
+          "id" : "UBERON:0001049-mouse",
+          "type" : "CLASS",
+          "lbl" : "neural tube (mouse)"
+        },
+        {
+          "id" : "EMAPA:16757",
+          "type" : "CLASS",
+          "lbl" : "tail neural tube"
+        },
+        {
+          "id" : "EMAPA:16164",
+          "type" : "CLASS",
+          "lbl" : "neural tube"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0001049-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16757",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16164",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001049-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0001049-mouse",
+            "EMAPA:16164"
+          ]
+        }
+      ]
+    }
+  ]
+}

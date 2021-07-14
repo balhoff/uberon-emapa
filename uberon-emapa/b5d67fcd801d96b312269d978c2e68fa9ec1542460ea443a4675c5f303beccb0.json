@@ -1,0 +1,153 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b5d67fcd801d96b312269d978c2e68fa9ec1542460ea443a4675c5f303beccb0",
+      "nodes" : [
+        {
+          "id" : "EMAPA:37474",
+          "type" : "CLASS",
+          "lbl" : "muscle organ"
+        },
+        {
+          "id" : "UBERON:0001630-mouse",
+          "type" : "CLASS",
+          "lbl" : "muscle organ (mouse)"
+        },
+        {
+          "id" : "UBERON:0002385-mouse",
+          "type" : "CLASS",
+          "lbl" : "muscle tissue (mouse)"
+        },
+        {
+          "id" : "UBERON:0005090-mouse",
+          "type" : "CLASS",
+          "lbl" : "muscle structure (mouse)"
+        },
+        {
+          "id" : "EMAPA:32715",
+          "type" : "CLASS",
+          "lbl" : "muscle tissue"
+        },
+        {
+          "id" : "EMAPA:35577",
+          "type" : "CLASS",
+          "lbl" : "musculature"
+        },
+        {
+          "id" : "UBERON:0001015-mouse",
+          "type" : "CLASS",
+          "lbl" : "musculature (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0001630-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:32715",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002385-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35577",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001015-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005090-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:37474",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001630-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001630-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0005090-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001015-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32715",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:37474",
+            "UBERON:0001630-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0002385-mouse",
+            "EMAPA:32715"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:35577",
+            "UBERON:0001015-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

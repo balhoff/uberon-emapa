@@ -1,0 +1,126 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:36ae5817bd79e1b6de61fc8313bc39fde99e494d93106adcfeda40e9287f80d6",
+      "nodes" : [
+        {
+          "id" : "EMAPA:37721",
+          "type" : "CLASS",
+          "lbl" : "post-cranial axial skeleton"
+        },
+        {
+          "id" : "UBERON:0005944-mouse",
+          "type" : "CLASS",
+          "lbl" : "axial skeleton plus cranial skeleton (mouse)"
+        },
+        {
+          "id" : "EMAPA:17214",
+          "type" : "CLASS",
+          "lbl" : "axial skeleton"
+        },
+        {
+          "id" : "EMAPA:18043",
+          "type" : "CLASS",
+          "lbl" : "axial skeleton tail region"
+        },
+        {
+          "id" : "UBERON:0002090-mouse",
+          "type" : "CLASS",
+          "lbl" : "postcranial axial skeleton (mouse)"
+        },
+        {
+          "id" : "UBERON:0006076-mouse",
+          "type" : "CLASS",
+          "lbl" : "caudal region of vertebral column (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0002090-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17214",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:37721",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002090-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18043",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006076-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005944-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18043",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17214",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005944-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:18043",
+            "UBERON:0006076-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0002090-mouse",
+            "EMAPA:37721"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:17214",
+            "UBERON:0005944-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

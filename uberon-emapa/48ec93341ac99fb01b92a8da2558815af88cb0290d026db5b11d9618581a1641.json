@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:48ec93341ac99fb01b92a8da2558815af88cb0290d026db5b11d9618581a1641",
+      "nodes" : [
+        {
+          "id" : "UBERON:0001292-mouse",
+          "type" : "CLASS",
+          "lbl" : "distal convoluted tubule (mouse)"
+        },
+        {
+          "id" : "EMAPA:28393",
+          "type" : "CLASS",
+          "lbl" : "distal convoluted tubule"
+        },
+        {
+          "id" : "UBERON:0005101-mouse",
+          "type" : "CLASS",
+          "lbl" : "early distal convoluted tubule (mouse)"
+        },
+        {
+          "id" : "UBERON:0005102-mouse",
+          "type" : "CLASS",
+          "lbl" : "late distal convoluted tubule (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0001292-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:28393",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:28393",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005101-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005102-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:28393",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:28393",
+            "UBERON:0005101-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

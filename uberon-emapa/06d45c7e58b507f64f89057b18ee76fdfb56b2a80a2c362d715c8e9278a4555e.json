@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:06d45c7e58b507f64f89057b18ee76fdfb56b2a80a2c362d715c8e9278a4555e",
+      "nodes" : [
+        {
+          "id" : "UBERON:0003074-mouse",
+          "type" : "CLASS",
+          "lbl" : "mesonephric duct (mouse)"
+        },
+        {
+          "id" : "UBERON:0009201-mouse",
+          "type" : "CLASS",
+          "lbl" : "nephric duct (mouse)"
+        },
+        {
+          "id" : "EMAPA:16577",
+          "type" : "CLASS",
+          "lbl" : "nephric duct"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0003074-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0009201-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16577",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0009201-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003074-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16577",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16577",
+            "UBERON:0009201-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

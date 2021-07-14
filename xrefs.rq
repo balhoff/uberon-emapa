@@ -1,0 +1,8 @@
+PREFIX oio: <http://www.geneontology.org/formats/oboInOwl#>
+
+SELECT DISTINCT ?term ?emapa
+WHERE {
+?term oio:hasDbXref ?emapa .
+FILTER(STRSTARTS(?emapa, "EMAPA:"))
+FILTER(STRSTARTS(STR(?term), "http://purl.obolibrary.org/obo/UBERON_"))
+}

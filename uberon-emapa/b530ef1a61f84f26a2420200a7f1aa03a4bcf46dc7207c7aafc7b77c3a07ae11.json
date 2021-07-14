@@ -1,0 +1,162 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b530ef1a61f84f26a2420200a7f1aa03a4bcf46dc7207c7aafc7b77c3a07ae11",
+      "nodes" : [
+        {
+          "id" : "UBERON:0001511-mouse",
+          "type" : "CLASS",
+          "lbl" : "skin of leg (mouse)"
+        },
+        {
+          "id" : "EMAPA:37352",
+          "type" : "CLASS",
+          "lbl" : "leg skin"
+        },
+        {
+          "id" : "EMAPA:18159",
+          "type" : "CLASS",
+          "lbl" : "upper leg skin"
+        },
+        {
+          "id" : "EMAPA:18156",
+          "type" : "CLASS",
+          "lbl" : "lower leg skin"
+        },
+        {
+          "id" : "UBERON:0004262-mouse",
+          "type" : "CLASS",
+          "lbl" : "upper leg skin (mouse)"
+        },
+        {
+          "id" : "UBERON:0004264-mouse",
+          "type" : "CLASS",
+          "lbl" : "lower leg skin (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:18159",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004262-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0004262-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0001511-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18156",
+          "pred" : "is_a",
+          "obj" : "UBERON:0001511-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18159",
+          "pred" : "is_a",
+          "obj" : "UBERON:0001511-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:37352",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001511-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0004264-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0001511-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18159",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:37352",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18156",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:37352",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18156",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004264-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0004264-mouse",
+            "EMAPA:18156"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:18159",
+            "UBERON:0004262-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0001511-mouse",
+            "EMAPA:37352"
+          ]
+        }
+      ]
+    }
+  ]
+}

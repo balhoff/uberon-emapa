@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:66e00eb5c8900d16d6f158fb91e501ecc71336cb9d29186e7ad73c792ef02e80",
+      "nodes" : [
+        {
+          "id" : "UBERON:0009602-mouse",
+          "type" : "CLASS",
+          "lbl" : "left lung associated mesenchyme (mouse)"
+        },
+        {
+          "id" : "EMAPA:16730",
+          "type" : "CLASS",
+          "lbl" : "left lung rudiment mesenchyme"
+        },
+        {
+          "id" : "EMAPA:17654",
+          "type" : "CLASS",
+          "lbl" : "left lung mesenchyme"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0009602-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16730",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17654",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0009602-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17654",
+            "UBERON:0009602-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ae4066d34ade7ccfacfe200fa8c0ecd2b130d7a33ba9f696190842c9d9002a90",
+      "nodes" : [
+        {
+          "id" : "UBERON:0000383-mouse",
+          "type" : "CLASS",
+          "lbl" : "musculature of body (mouse)"
+        },
+        {
+          "id" : "EMAPA:35578",
+          "type" : "CLASS",
+          "lbl" : "skeletal musculature"
+        },
+        {
+          "id" : "UBERON:0018254-mouse",
+          "type" : "CLASS",
+          "lbl" : "skeletal musculature (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0000383-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35578",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35578",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0018254-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35578",
+            "UBERON:0018254-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

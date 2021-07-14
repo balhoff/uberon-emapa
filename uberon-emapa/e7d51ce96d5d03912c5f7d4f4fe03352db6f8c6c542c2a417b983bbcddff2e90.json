@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e7d51ce96d5d03912c5f7d4f4fe03352db6f8c6c542c2a417b983bbcddff2e90",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17768",
+          "type" : "CLASS",
+          "lbl" : "choroid fissure"
+        },
+        {
+          "id" : "UBERON:0002192-mouse",
+          "type" : "CLASS",
+          "lbl" : "ventricular system choroidal fissure (mouse)"
+        },
+        {
+          "id" : "EMAPA:17548",
+          "type" : "CLASS",
+          "lbl" : "choroid invagination"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17768",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002192-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0002192-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17548",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0002192-mouse",
+            "EMAPA:17768"
+          ]
+        }
+      ]
+    }
+  ]
+}

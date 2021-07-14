@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5a332455477673b7ab7c50d0014f70f0c6cb70bf007149fcd3fd21eea7d9c078",
+      "nodes" : [
+        {
+          "id" : "EMAPA:32730",
+          "type" : "CLASS",
+          "lbl" : "cartilage"
+        },
+        {
+          "id" : "UBERON:0007844-mouse",
+          "type" : "CLASS",
+          "lbl" : "cartilage element (mouse)"
+        },
+        {
+          "id" : "UBERON:0002418-mouse",
+          "type" : "CLASS",
+          "lbl" : "cartilage tissue (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:32730",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0007844-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0002418-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32730",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:32730",
+            "UBERON:0007844-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

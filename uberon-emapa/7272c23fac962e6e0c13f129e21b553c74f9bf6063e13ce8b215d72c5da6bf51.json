@@ -1,0 +1,120 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7272c23fac962e6e0c13f129e21b553c74f9bf6063e13ce8b215d72c5da6bf51",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16768",
+          "type" : "CLASS",
+          "lbl" : "4th branchial arch ectoderm"
+        },
+        {
+          "id" : "EMAPA:16764",
+          "type" : "CLASS",
+          "lbl" : "4th branchial membrane ectoderm"
+        },
+        {
+          "id" : "EMAPA:16761",
+          "type" : "CLASS",
+          "lbl" : "4th branchial groove"
+        },
+        {
+          "id" : "UBERON:0005875-mouse",
+          "type" : "CLASS",
+          "lbl" : "4th arch pharyngeal cleft (mouse)"
+        },
+        {
+          "id" : "EMAPA:16762",
+          "type" : "CLASS",
+          "lbl" : "4th branchial groove ectoderm"
+        },
+        {
+          "id" : "UBERON:0005662-mouse",
+          "type" : "CLASS",
+          "lbl" : "4th arch ectoderm (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16768",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005662-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005875-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16761",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005662-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16764",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16762",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005875-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005662-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16762",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16768",
+            "UBERON:0005662-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0005875-mouse",
+            "EMAPA:16762"
+          ]
+        }
+      ]
+    }
+  ]
+}

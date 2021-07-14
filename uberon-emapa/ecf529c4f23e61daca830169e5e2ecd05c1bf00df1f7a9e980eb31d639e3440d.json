@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ecf529c4f23e61daca830169e5e2ecd05c1bf00df1f7a9e980eb31d639e3440d",
+      "nodes" : [
+        {
+          "id" : "EMAPA:36070",
+          "type" : "CLASS",
+          "lbl" : "cloacal epithelium of cloacal membrane"
+        },
+        {
+          "id" : "UBERON:0012481-mouse",
+          "type" : "CLASS",
+          "lbl" : "cloacal epithelium (mouse)"
+        },
+        {
+          "id" : "EMAPA:27577",
+          "type" : "CLASS",
+          "lbl" : "cloacal epithelium"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:36070",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0012481-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0012481-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:27577",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:36070",
+            "UBERON:0012481-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

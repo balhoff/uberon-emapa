@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9c4e70070f66bf56bc3508faa0ba52561163d3651c4fc5f73161f0d339cc5019",
+      "nodes" : [
+        {
+          "id" : "UBERON:0005501-mouse",
+          "type" : "CLASS",
+          "lbl" : "rhombomere lateral wall (mouse)"
+        },
+        {
+          "id" : "EMAPA:35364",
+          "type" : "CLASS",
+          "lbl" : "future hindbrain lateral wall"
+        },
+        {
+          "id" : "EMAPA:32819",
+          "type" : "CLASS",
+          "lbl" : "rhombomere lateral wall"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0005501-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35364",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:32819",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005501-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:32819",
+            "UBERON:0005501-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

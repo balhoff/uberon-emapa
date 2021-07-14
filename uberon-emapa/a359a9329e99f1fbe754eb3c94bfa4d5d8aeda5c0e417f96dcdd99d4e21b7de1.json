@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a359a9329e99f1fbe754eb3c94bfa4d5d8aeda5c0e417f96dcdd99d4e21b7de1",
+      "nodes" : [
+        {
+          "id" : "UBERON:0002327-mouse",
+          "type" : "CLASS",
+          "lbl" : "trunk of intercostal nerve (mouse)"
+        },
+        {
+          "id" : "EMAPA:18227",
+          "type" : "CLASS",
+          "lbl" : "intercostal nerve"
+        },
+        {
+          "id" : "UBERON:0003727-mouse",
+          "type" : "CLASS",
+          "lbl" : "intercostal nerve (mouse)"
+        },
+        {
+          "id" : "EMAPA:37720",
+          "type" : "CLASS",
+          "lbl" : "intercostal nerve trunk"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0002327-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18227",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18227",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003727-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:37720",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002327-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:18227",
+            "UBERON:0003727-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:37720",
+            "UBERON:0002327-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

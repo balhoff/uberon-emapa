@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:213f7ff96b6f838addd68c9c21ef9358d692c34b7a9e776e7e7ec6fc3d62394e",
+      "nodes" : [
+        {
+          "id" : "UBERON:0012494-mouse",
+          "type" : "CLASS",
+          "lbl" : "muscularis mucosae of duodenum (mouse)"
+        },
+        {
+          "id" : "EMAPA:27259",
+          "type" : "CLASS",
+          "lbl" : "duodenum muscularis mucosa"
+        },
+        {
+          "id" : "EMAPA:27243",
+          "type" : "CLASS",
+          "lbl" : "duodenum muscularis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0012494-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:27259",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:27243",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0012494-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0012494-mouse",
+            "EMAPA:27243"
+          ]
+        }
+      ]
+    }
+  ]
+}

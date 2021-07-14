@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:294e44695e46b74d8de3dea7ef35a8b6437588cb8f0fdef8cd467cd17145e782",
+      "nodes" : [
+        {
+          "id" : "UBERON:0007188-mouse",
+          "type" : "CLASS",
+          "lbl" : "mesothelium of serous pericardium (mouse)"
+        },
+        {
+          "id" : "EMAPA:16133",
+          "type" : "CLASS",
+          "lbl" : "pericardium"
+        },
+        {
+          "id" : "UBERON:0002407-mouse",
+          "type" : "CLASS",
+          "lbl" : "pericardium (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0007188-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16133",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16133",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002407-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16133",
+            "UBERON:0002407-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

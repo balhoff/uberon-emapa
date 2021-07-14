@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bf32b3346ed47faee7ee6bbf3b698fbb0b8b0a1f1d5db6b963deacc17e591ecc",
+      "nodes" : [
+        {
+          "id" : "EMAPA:35193",
+          "type" : "CLASS",
+          "lbl" : "bronchus connective tissue"
+        },
+        {
+          "id" : "UBERON:0003592-mouse",
+          "type" : "CLASS",
+          "lbl" : "bronchus connective tissue (mouse)"
+        },
+        {
+          "id" : "EMAPA:32690",
+          "type" : "CLASS",
+          "lbl" : "bronchus mesenchyme"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:35193",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003592-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003592-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32690",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35193",
+            "UBERON:0003592-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6adbb3d9a2cc5e538e8d37467df2bf6cd010c0ca37d372d21b5dd4c8cca20d2a",
+      "nodes" : [
+        {
+          "id" : "EMAPA:35721",
+          "type" : "CLASS",
+          "lbl" : "raphe nucleus"
+        },
+        {
+          "id" : "UBERON:0004684-mouse",
+          "type" : "CLASS",
+          "lbl" : "raphe nuclei (mouse)"
+        },
+        {
+          "id" : "UBERON:0007412-mouse",
+          "type" : "CLASS",
+          "lbl" : "midbrain raphe nuclei (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:35721",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004684-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0007412-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35721",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35721",
+            "UBERON:0004684-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

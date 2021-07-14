@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9539a16d5e1b4edae519e2cb336b8a0140902eaa0a044f9394a68f30b4b22dca",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16917",
+          "type" : "CLASS",
+          "lbl" : "4th ventricle"
+        },
+        {
+          "id" : "UBERON:0013149-mouse",
+          "type" : "CLASS",
+          "lbl" : "hindbrain vesicle (mouse)"
+        },
+        {
+          "id" : "UBERON:0002422-mouse",
+          "type" : "CLASS",
+          "lbl" : "fourth ventricle (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16917",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0013149-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0002422-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16917",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0013149-mouse",
+            "EMAPA:16917"
+          ]
+        }
+      ]
+    }
+  ]
+}

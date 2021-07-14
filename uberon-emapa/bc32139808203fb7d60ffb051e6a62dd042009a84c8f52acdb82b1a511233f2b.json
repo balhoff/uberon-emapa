@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bc32139808203fb7d60ffb051e6a62dd042009a84c8f52acdb82b1a511233f2b",
+      "nodes" : [
+        {
+          "id" : "EMAPA:28251",
+          "type" : "CLASS",
+          "lbl" : "glomerular basement membrane of mature renal corpuscle"
+        },
+        {
+          "id" : "UBERON:0005777-mouse",
+          "type" : "CLASS",
+          "lbl" : "glomerular basement membrane (mouse)"
+        },
+        {
+          "id" : "EMAPA:30965",
+          "type" : "CLASS",
+          "lbl" : "glomerular basement membrane of maturing renal corpuscle"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:28251",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005777-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005777-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:30965",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:28251",
+            "UBERON:0005777-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ffc46459393d60f71b27fdcbb4eacf2011c588df7a4b6583dcbb60f9613b190b",
+      "nodes" : [
+        {
+          "id" : "UBERON:0003889-mouse",
+          "type" : "CLASS",
+          "lbl" : "fallopian tube (mouse)"
+        },
+        {
+          "id" : "EMAPA:18984",
+          "type" : "CLASS",
+          "lbl" : "oviduct"
+        },
+        {
+          "id" : "EMAPA:35660",
+          "type" : "CLASS",
+          "lbl" : "paramesonephric duct of female"
+        },
+        {
+          "id" : "UBERON:0000993-mouse",
+          "type" : "CLASS",
+          "lbl" : "oviduct (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0003889-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18984",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35660",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003889-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18984",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0000993-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0003889-mouse",
+            "EMAPA:35660"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:18984",
+            "UBERON:0000993-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

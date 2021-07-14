@@ -1,0 +1,105 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:deb90a17ceae47e79279f8e8e56a29b9fa4f2d91f98b41ad34411a3c84ba20c1",
+      "nodes" : [
+        {
+          "id" : "UBERON:0000044-mouse",
+          "type" : "CLASS",
+          "lbl" : "dorsal root ganglion (mouse)"
+        },
+        {
+          "id" : "EMAPA:16667",
+          "type" : "CLASS",
+          "lbl" : "spinal ganglion"
+        },
+        {
+          "id" : "EMAPA:16668",
+          "type" : "CLASS",
+          "lbl" : "dorsal root ganglion"
+        },
+        {
+          "id" : "EMAPA:18372",
+          "type" : "CLASS",
+          "lbl" : "tail dorsal root ganglion"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:18372",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0000044-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18372",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:16667",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0000044-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16668",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0000044-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16667",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18372",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:16668",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16668",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:16667",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:18372",
+            "UBERON:0000044-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

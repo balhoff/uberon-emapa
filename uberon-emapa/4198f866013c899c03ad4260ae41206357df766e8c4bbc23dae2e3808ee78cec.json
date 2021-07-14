@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4198f866013c899c03ad4260ae41206357df766e8c4bbc23dae2e3808ee78cec",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17623",
+          "type" : "CLASS",
+          "lbl" : "stomach glandular region"
+        },
+        {
+          "id" : "UBERON:0011953-mouse",
+          "type" : "CLASS",
+          "lbl" : "stomach glandular region (mouse)"
+        },
+        {
+          "id" : "EMAPA:35814",
+          "type" : "CLASS",
+          "lbl" : "stomach glandular epithelium"
+        },
+        {
+          "id" : "UBERON:0006924-mouse",
+          "type" : "CLASS",
+          "lbl" : "stomach glandular epithelium (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17623",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0011953-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35814",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006924-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0006924-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17623",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17623",
+            "UBERON:0011953-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:35814",
+            "UBERON:0006924-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

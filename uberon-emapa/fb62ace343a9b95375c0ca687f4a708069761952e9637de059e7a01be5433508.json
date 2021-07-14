@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fb62ace343a9b95375c0ca687f4a708069761952e9637de059e7a01be5433508",
+      "nodes" : [
+        {
+          "id" : "UBERON:0003119-mouse",
+          "type" : "CLASS",
+          "lbl" : "pharyngeal arch artery 2 (mouse)"
+        },
+        {
+          "id" : "EMAPA:16203",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "EMAPA:16686",
+          "type" : "CLASS",
+          "lbl" : "2nd arch artery"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0003119-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16203",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16686",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003119-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16686",
+            "UBERON:0003119-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

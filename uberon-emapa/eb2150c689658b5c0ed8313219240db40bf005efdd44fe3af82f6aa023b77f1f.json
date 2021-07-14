@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eb2150c689658b5c0ed8313219240db40bf005efdd44fe3af82f6aa023b77f1f",
+      "nodes" : [
+        {
+          "id" : "EMAPA:28457",
+          "type" : "CLASS",
+          "lbl" : "renal vasculature"
+        },
+        {
+          "id" : "UBERON:0006544-mouse",
+          "type" : "CLASS",
+          "lbl" : "kidney vasculature (mouse)"
+        },
+        {
+          "id" : "UBERON:0003517-mouse",
+          "type" : "CLASS",
+          "lbl" : "kidney blood vessel (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:28457",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006544-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003517-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:28457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0006544-mouse",
+            "EMAPA:28457"
+          ]
+        }
+      ]
+    }
+  ]
+}

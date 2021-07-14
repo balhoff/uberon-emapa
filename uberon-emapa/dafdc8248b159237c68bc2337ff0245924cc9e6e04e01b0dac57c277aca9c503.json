@@ -1,0 +1,102 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dafdc8248b159237c68bc2337ff0245924cc9e6e04e01b0dac57c277aca9c503",
+      "nodes" : [
+        {
+          "id" : "EMAPA:29671",
+          "type" : "CLASS",
+          "lbl" : "distal straight tubule of outer stripe of outer medulla"
+        },
+        {
+          "id" : "UBERON:0001291-mouse",
+          "type" : "CLASS",
+          "lbl" : "thick ascending limb of loop of Henle (mouse)"
+        },
+        {
+          "id" : "EMAPA:28396",
+          "type" : "CLASS",
+          "lbl" : "distal straight tubule of renal cortex"
+        },
+        {
+          "id" : "UBERON:0006376-mouse",
+          "type" : "CLASS",
+          "lbl" : "premacula segment of distal straight tubule (mouse)"
+        },
+        {
+          "id" : "EMAPA:35512",
+          "type" : "CLASS",
+          "lbl" : "loop of Henle distal straight tubule"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0001291-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:29671",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001291-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:28396",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35512",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001291-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:29671",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006376-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35512",
+            "UBERON:0001291-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0006376-mouse",
+            "EMAPA:29671"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a6fb6945d62092994c620c3e8eebfd029aadb4374cdde931673b29afc84c48c0",
+      "nodes" : [
+        {
+          "id" : "UBERON:0002461-mouse",
+          "type" : "CLASS",
+          "lbl" : "anterior abdominal wall muscle (mouse)"
+        },
+        {
+          "id" : "EMAPA:17744",
+          "type" : "CLASS",
+          "lbl" : "anterior abdominal wall musculature"
+        },
+        {
+          "id" : "UBERON:0006635-mouse",
+          "type" : "CLASS",
+          "lbl" : "anterior abdominal wall (mouse)"
+        },
+        {
+          "id" : "EMAPA:17745",
+          "type" : "CLASS",
+          "lbl" : "anterior abdominal wall muscle"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0002461-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17744",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17744",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006635-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17745",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002461-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17744",
+            "UBERON:0006635-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0002461-mouse",
+            "EMAPA:17745"
+          ]
+        }
+      ]
+    }
+  ]
+}

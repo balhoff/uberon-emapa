@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:49d7d90cb36859d3f2b23991d5d61b26624c4d1e95609e1d707c8d4e66103dde",
+      "nodes" : [
+        {
+          "id" : "UBERON:0010145-mouse",
+          "type" : "CLASS",
+          "lbl" : "paraurethral gland (mouse)"
+        },
+        {
+          "id" : "EMAPA:36133",
+          "type" : "CLASS",
+          "lbl" : "urethral gland of pelvic urethra of female"
+        },
+        {
+          "id" : "EMAPA:36134",
+          "type" : "CLASS",
+          "lbl" : "urethral gland of clitoral urethra"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0010145-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:36133",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:36134",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0010145-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:36134",
+            "UBERON:0010145-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

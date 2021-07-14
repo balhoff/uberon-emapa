@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:44c63a4d4cf7ef0e5fb2b8da3cc8cd3791313621bb43cf4449be655416bad421",
+      "nodes" : [
+        {
+          "id" : "UBERON:0006359-mouse",
+          "type" : "CLASS",
+          "lbl" : "mesoduodenum (mouse)"
+        },
+        {
+          "id" : "EMAPA:19082",
+          "type" : "CLASS",
+          "lbl" : "mesoduodenum"
+        },
+        {
+          "id" : "EMAPA:17183",
+          "type" : "CLASS",
+          "lbl" : "duodenum rostral part mesoduodenum"
+        },
+        {
+          "id" : "EMAPA:17198",
+          "type" : "CLASS",
+          "lbl" : "duodenum caudal part mesoduodenum"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0006359-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:19082",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17183",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006359-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0006359-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17198",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17183",
+            "UBERON:0006359-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

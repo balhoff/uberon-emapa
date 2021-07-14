@@ -1,0 +1,96 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d85fb2636b9060a62b80db38889ffbc4648a367ca1b6e497c61c860a85aaff94",
+      "nodes" : [
+        {
+          "id" : "UBERON:0005750-mouse",
+          "type" : "CLASS",
+          "lbl" : "glomerular parietal epithelium (mouse)"
+        },
+        {
+          "id" : "EMAPA:27979",
+          "type" : "CLASS",
+          "lbl" : "parietal epithelium of maturing renal corpuscle"
+        },
+        {
+          "id" : "EMAPA:28260",
+          "type" : "CLASS",
+          "lbl" : "parietal epithelium of mature renal corpuscle"
+        },
+        {
+          "id" : "EMAPA:35969",
+          "type" : "CLASS",
+          "lbl" : "metanephros parietal epithelium"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:28260",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:35969",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005750-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:27979",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:28260",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005750-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:27979",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:35969",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005750-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35969",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0005750-mouse",
+            "EMAPA:28260"
+          ]
+        }
+      ]
+    }
+  ]
+}

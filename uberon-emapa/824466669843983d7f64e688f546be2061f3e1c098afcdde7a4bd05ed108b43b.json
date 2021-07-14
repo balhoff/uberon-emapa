@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:824466669843983d7f64e688f546be2061f3e1c098afcdde7a4bd05ed108b43b",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17906",
+          "type" : "CLASS",
+          "lbl" : "lower jaw"
+        },
+        {
+          "id" : "UBERON:0001710-mouse",
+          "type" : "CLASS",
+          "lbl" : "lower jaw region (mouse)"
+        },
+        {
+          "id" : "EMAPA:17910",
+          "type" : "CLASS",
+          "lbl" : "lower jaw skeleton"
+        },
+        {
+          "id" : "UBERON:0003278-mouse",
+          "type" : "CLASS",
+          "lbl" : "skeleton of lower jaw (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17906",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001710-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17910",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003278-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003278-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17906",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17906",
+            "UBERON:0001710-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0003278-mouse",
+            "EMAPA:17910"
+          ]
+        }
+      ]
+    }
+  ]
+}

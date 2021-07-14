@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6d23d16029873b94e8bd54219bf1d509e525a0cabb4a0413ec4b83452932c1be",
+      "nodes" : [
+        {
+          "id" : "EMAPA:32707",
+          "type" : "CLASS",
+          "lbl" : "cerebral cortex ventricular zone"
+        },
+        {
+          "id" : "UBERON:0014936-mouse",
+          "type" : "CLASS",
+          "lbl" : "cerebral cortex ventricular layer (mouse)"
+        },
+        {
+          "id" : "EMAPA:17547",
+          "type" : "CLASS",
+          "lbl" : "cerebral cortex ventricular layer"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:32707",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0014936-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0014936-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17547",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:32707",
+            "UBERON:0014936-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6c1825cd2ff09bf23a82b499b44540684b74cb654356f8d1c7f44d9d105b88fc",
+      "nodes" : [
+        {
+          "id" : "UBERON:0002257-mouse",
+          "type" : "CLASS",
+          "lbl" : "ventral horn of spinal cord (mouse)"
+        },
+        {
+          "id" : "EMAPA:18575",
+          "type" : "CLASS",
+          "lbl" : "ventral grey horn"
+        },
+        {
+          "id" : "EMAPA:35794",
+          "type" : "CLASS",
+          "lbl" : "spinal cord ventral horn"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0002257-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18575",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35794",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002257-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35794",
+            "UBERON:0002257-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

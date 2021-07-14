@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6f7bd44740d5791f5db31c4b30febb7ff7c5d5d4bc9a6f6ae67b0a8e62a29c98",
+      "nodes" : [
+        {
+          "id" : "UBERON:0003504-mouse",
+          "type" : "CLASS",
+          "lbl" : "respiratory system blood vessel (mouse)"
+        },
+        {
+          "id" : "EMAPA:35995",
+          "type" : "CLASS",
+          "lbl" : "respiratory system vascular element"
+        },
+        {
+          "id" : "EMAPA:35731",
+          "type" : "CLASS",
+          "lbl" : "respiratory system blood vessel"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0003504-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35995",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35731",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003504-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35731",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:35995",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0003504-mouse",
+            "EMAPA:35731"
+          ]
+        }
+      ]
+    }
+  ]
+}

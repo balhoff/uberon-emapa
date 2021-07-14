@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7320c950f7d35448ee4cda30ceca090401ef91e25255aa6a3bba60bca24cfcb6",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17039",
+          "type" : "CLASS",
+          "lbl" : "midgut loop mesentery"
+        },
+        {
+          "id" : "UBERON:0003284-mouse",
+          "type" : "CLASS",
+          "lbl" : "mesentery of midgut (mouse)"
+        },
+        {
+          "id" : "EMAPA:16721",
+          "type" : "CLASS",
+          "lbl" : "midgut mesentery"
+        },
+        {
+          "id" : "EMAPA:17197",
+          "type" : "CLASS",
+          "lbl" : "duodenum caudal part mesentery"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17039",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003284-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003284-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16721",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003284-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17197",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17039",
+            "UBERON:0003284-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

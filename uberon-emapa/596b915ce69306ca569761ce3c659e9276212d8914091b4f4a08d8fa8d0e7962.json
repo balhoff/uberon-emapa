@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:596b915ce69306ca569761ce3c659e9276212d8914091b4f4a08d8fa8d0e7962",
+      "nodes" : [
+        {
+          "id" : "EMAPA:35790",
+          "type" : "CLASS",
+          "lbl" : "spinal cord dorsal horn"
+        },
+        {
+          "id" : "UBERON:0002256-mouse",
+          "type" : "CLASS",
+          "lbl" : "dorsal horn of spinal cord (mouse)"
+        },
+        {
+          "id" : "EMAPA:18574",
+          "type" : "CLASS",
+          "lbl" : "dorsal grey horn"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:35790",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002256-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0002256-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18574",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35790",
+            "UBERON:0002256-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

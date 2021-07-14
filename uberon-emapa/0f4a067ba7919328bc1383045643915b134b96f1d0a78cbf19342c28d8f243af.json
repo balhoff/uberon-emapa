@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0f4a067ba7919328bc1383045643915b134b96f1d0a78cbf19342c28d8f243af",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17373",
+          "type" : "CLASS",
+          "lbl" : "metanephros"
+        },
+        {
+          "id" : "UBERON:0002113-mouse",
+          "type" : "CLASS",
+          "lbl" : "kidney (mouse)"
+        },
+        {
+          "id" : "UBERON:0000081-mouse",
+          "type" : "CLASS",
+          "lbl" : "metanephros (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17373",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002113-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0000081-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17373",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0000081-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0002113-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17373",
+            "UBERON:0002113-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

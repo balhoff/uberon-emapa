@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9e90af99c78f2a698a937d37921c0d7452f2b8af923cbf7c76cc575bc1f800cc",
+      "nodes" : [
+        {
+          "id" : "UBERON:0005185-mouse",
+          "type" : "CLASS",
+          "lbl" : "renal medulla collecting duct (mouse)"
+        },
+        {
+          "id" : "EMAPA:35459",
+          "type" : "CLASS",
+          "lbl" : "medullary collecting duct"
+        },
+        {
+          "id" : "EMAPA:28061",
+          "type" : "CLASS",
+          "lbl" : "medullary collecting duct"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0005185-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35459",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:28061",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005185-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0005185-mouse",
+            "EMAPA:28061"
+          ]
+        }
+      ]
+    }
+  ]
+}

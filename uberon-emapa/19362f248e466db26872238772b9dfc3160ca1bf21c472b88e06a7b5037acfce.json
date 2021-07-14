@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:19362f248e466db26872238772b9dfc3160ca1bf21c472b88e06a7b5037acfce",
+      "nodes" : [
+        {
+          "id" : "UBERON:0004465-mouse",
+          "type" : "CLASS",
+          "lbl" : "musculature of neck (mouse)"
+        },
+        {
+          "id" : "EMAPA:36050",
+          "type" : "CLASS",
+          "lbl" : "neck muscle"
+        },
+        {
+          "id" : "UBERON:0002377-mouse",
+          "type" : "CLASS",
+          "lbl" : "muscle of neck (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0004465-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:36050",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:36050",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002377-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0002377-mouse",
+            "EMAPA:36050"
+          ]
+        }
+      ]
+    }
+  ]
+}

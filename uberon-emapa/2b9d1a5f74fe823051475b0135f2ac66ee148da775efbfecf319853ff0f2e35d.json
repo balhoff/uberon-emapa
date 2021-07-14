@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2b9d1a5f74fe823051475b0135f2ac66ee148da775efbfecf319853ff0f2e35d",
+      "nodes" : [
+        {
+          "id" : "UBERON:0004060-mouse",
+          "type" : "CLASS",
+          "lbl" : "neural tube ventricular layer (mouse)"
+        },
+        {
+          "id" : "EMAPA:35362",
+          "type" : "CLASS",
+          "lbl" : "future brain ventricular layer"
+        },
+        {
+          "id" : "EMAPA:17152",
+          "type" : "CLASS",
+          "lbl" : "neural tube ventricular layer"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0004060-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35362",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17152",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004060-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17152",
+            "UBERON:0004060-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

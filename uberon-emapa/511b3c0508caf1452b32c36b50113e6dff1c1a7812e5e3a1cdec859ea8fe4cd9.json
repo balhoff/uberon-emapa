@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:511b3c0508caf1452b32c36b50113e6dff1c1a7812e5e3a1cdec859ea8fe4cd9",
+      "nodes" : [
+        {
+          "id" : "UBERON:0001290-mouse",
+          "type" : "CLASS",
+          "lbl" : "proximal straight tubule (mouse)"
+        },
+        {
+          "id" : "EMAPA:29669",
+          "type" : "CLASS",
+          "lbl" : "proximal straight tubule of outer stripe of outer medulla"
+        },
+        {
+          "id" : "EMAPA:29661",
+          "type" : "CLASS",
+          "lbl" : "proximal straight tubule of renal cortex"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0001290-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:29669",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:29661",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001290-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:29661",
+            "UBERON:0001290-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

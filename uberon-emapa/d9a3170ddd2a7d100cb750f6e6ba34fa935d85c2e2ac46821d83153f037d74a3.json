@@ -1,0 +1,102 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d9a3170ddd2a7d100cb750f6e6ba34fa935d85c2e2ac46821d83153f037d74a3",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17748",
+          "type" : "CLASS",
+          "lbl" : "pectoral girdle and thoracic body wall muscle"
+        },
+        {
+          "id" : "UBERON:0008713-mouse",
+          "type" : "CLASS",
+          "lbl" : "pectoral girdle and thoracic body wall skeletal muscle (mouse)"
+        },
+        {
+          "id" : "UBERON:0002426-mouse",
+          "type" : "CLASS",
+          "lbl" : "chest muscle (mouse)"
+        },
+        {
+          "id" : "EMAPA:17747",
+          "type" : "CLASS",
+          "lbl" : "pectoral girdle and thoracic body wall musculature"
+        },
+        {
+          "id" : "UBERON:0008196-mouse",
+          "type" : "CLASS",
+          "lbl" : "muscle of pectoral girdle (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0008713-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17748",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0002426-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17748",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17748",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0008196-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17747",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002426-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17748",
+            "UBERON:0008196-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:17747",
+            "UBERON:0002426-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

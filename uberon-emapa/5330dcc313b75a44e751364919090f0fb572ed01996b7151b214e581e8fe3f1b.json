@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5330dcc313b75a44e751364919090f0fb572ed01996b7151b214e581e8fe3f1b",
+      "nodes" : [
+        {
+          "id" : "EMAPA:18636",
+          "type" : "CLASS",
+          "lbl" : "superior sagittal sinus"
+        },
+        {
+          "id" : "UBERON:0001642-mouse",
+          "type" : "CLASS",
+          "lbl" : "superior sagittal sinus (mouse)"
+        },
+        {
+          "id" : "UBERON:0009968-mouse",
+          "type" : "CLASS",
+          "lbl" : "primitive superior sagittal sinus (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:18636",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001642-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0009968-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18636",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:18636",
+            "UBERON:0001642-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

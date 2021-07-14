@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:dd3a0730394e81211b7ac06bf51f5cf58e883837ac1aecc9848c7500ee354c02",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17318",
+          "type" : "CLASS",
+          "lbl" : "left atrium auricular region cardiac muscle"
+        },
+        {
+          "id" : "UBERON:0009780-mouse",
+          "type" : "CLASS",
+          "lbl" : "cardiac muscle tissue of left auricle (mouse)"
+        },
+        {
+          "id" : "EMAPA:16818",
+          "type" : "CLASS",
+          "lbl" : "left auricular region cardiac muscle"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17318",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0009780-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0009780-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16818",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0009780-mouse",
+            "EMAPA:17318"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cc41ccf0c7d47f2ebbcdc0fe9da3f0bd55f223174c0ade9aa3ab2a59ba7a004c",
+      "nodes" : [
+        {
+          "id" : "EMAPA:35776",
+          "type" : "CLASS",
+          "lbl" : "skin muscle"
+        },
+        {
+          "id" : "EMAPA:18187",
+          "type" : "CLASS",
+          "lbl" : "integumental system muscle"
+        },
+        {
+          "id" : "UBERON:0004253-mouse",
+          "type" : "CLASS",
+          "lbl" : "skin muscle (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:35776",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:18187",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35776",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004253-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0004253-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18187",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35776",
+            "UBERON:0004253-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

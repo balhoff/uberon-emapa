@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:095626d589e4848e6788d9454f329555d0c92a8ed48242c601eb39237e7544e8",
+      "nodes" : [
+        {
+          "id" : "UBERON:0005805-mouse",
+          "type" : "CLASS",
+          "lbl" : "dorsal aorta (mouse)"
+        },
+        {
+          "id" : "EMAPA:18606",
+          "type" : "CLASS",
+          "lbl" : "descending aorta"
+        },
+        {
+          "id" : "UBERON:0001514-mouse",
+          "type" : "CLASS",
+          "lbl" : "descending aorta (mouse)"
+        },
+        {
+          "id" : "UBERON:0010190-mouse",
+          "type" : "CLASS",
+          "lbl" : "pair of dorsal aortae (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0005805-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18606",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001514-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18606",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18606",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0010190-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:18606",
+            "UBERON:0010190-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

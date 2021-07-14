@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:148f91ff952f65bb004e3e49f7d3498ee718272909523be3ce84360cc65d212e",
+      "nodes" : [
+        {
+          "id" : "EMAPA:18233",
+          "type" : "CLASS",
+          "lbl" : "conjunctival sac"
+        },
+        {
+          "id" : "UBERON:0001811-mouse",
+          "type" : "CLASS",
+          "lbl" : "conjunctiva (mouse)"
+        },
+        {
+          "id" : "UBERON:0005908-mouse",
+          "type" : "CLASS",
+          "lbl" : "conjunctival sac (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:18233",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001811-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005908-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18233",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:18233",
+            "UBERON:0001811-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

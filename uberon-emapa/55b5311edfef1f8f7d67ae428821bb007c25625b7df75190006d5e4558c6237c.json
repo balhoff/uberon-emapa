@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:55b5311edfef1f8f7d67ae428821bb007c25625b7df75190006d5e4558c6237c",
+      "nodes" : [
+        {
+          "id" : "UBERON:0013247-mouse",
+          "type" : "CLASS",
+          "lbl" : "male paramesonephric duct (mouse)"
+        },
+        {
+          "id" : "EMAPA:29161",
+          "type" : "CLASS",
+          "lbl" : "degenerating mesonephric portion of male paramesonephric duct"
+        },
+        {
+          "id" : "EMAPA:35661",
+          "type" : "CLASS",
+          "lbl" : "paramesonephric duct of male"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0013247-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:29161",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35661",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0013247-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0013247-mouse",
+            "EMAPA:35661"
+          ]
+        }
+      ]
+    }
+  ]
+}

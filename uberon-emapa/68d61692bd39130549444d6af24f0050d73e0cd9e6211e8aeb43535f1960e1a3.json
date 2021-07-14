@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:68d61692bd39130549444d6af24f0050d73e0cd9e6211e8aeb43535f1960e1a3",
+      "nodes" : [
+        {
+          "id" : "UBERON:0009523-mouse",
+          "type" : "CLASS",
+          "lbl" : "mesenchyme of handplate (mouse)"
+        },
+        {
+          "id" : "EMAPA:17457",
+          "type" : "CLASS",
+          "lbl" : "hand mesenchyme"
+        },
+        {
+          "id" : "EMAPA:17248",
+          "type" : "CLASS",
+          "lbl" : "handplate mesenchyme"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0009523-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17457",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17248",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0009523-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0009523-mouse",
+            "EMAPA:17248"
+          ]
+        }
+      ]
+    }
+  ]
+}

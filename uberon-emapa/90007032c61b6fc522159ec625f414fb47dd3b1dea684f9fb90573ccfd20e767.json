@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:90007032c61b6fc522159ec625f414fb47dd3b1dea684f9fb90573ccfd20e767",
+      "nodes" : [
+        {
+          "id" : "UBERON:0001230-mouse",
+          "type" : "CLASS",
+          "lbl" : "glomerular capsule (mouse)"
+        },
+        {
+          "id" : "EMAPA:28257",
+          "type" : "CLASS",
+          "lbl" : "Bowman's capsule of mature renal corpuscle"
+        },
+        {
+          "id" : "EMAPA:27973",
+          "type" : "CLASS",
+          "lbl" : "Bowman's capsule of maturing renal corpuscle"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0001230-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:28257",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:27973",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001230-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0001230-mouse",
+            "EMAPA:27973"
+          ]
+        }
+      ]
+    }
+  ]
+}

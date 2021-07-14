@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7e4e45ea8a1798382d3f87f8e9833e5177e046a9ac257c2c2a62c4e8330a1b75",
+      "nodes" : [
+        {
+          "id" : "UBERON:0001862-mouse",
+          "type" : "CLASS",
+          "lbl" : "vestibular labyrinth (mouse)"
+        },
+        {
+          "id" : "EMAPA:17815",
+          "type" : "CLASS",
+          "lbl" : "inner ear labyrinth"
+        },
+        {
+          "id" : "UBERON:0001849-mouse",
+          "type" : "CLASS",
+          "lbl" : "membranous labyrinth (mouse)"
+        },
+        {
+          "id" : "EMAPA:17286",
+          "type" : "CLASS",
+          "lbl" : "inner ear vestibular component"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0001862-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17815",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17815",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001849-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17286",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001862-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0001849-mouse",
+            "EMAPA:17815"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0001862-mouse",
+            "EMAPA:17286"
+          ]
+        }
+      ]
+    }
+  ]
+}

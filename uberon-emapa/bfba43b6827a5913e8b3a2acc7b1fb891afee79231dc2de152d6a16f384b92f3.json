@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bfba43b6827a5913e8b3a2acc7b1fb891afee79231dc2de152d6a16f384b92f3",
+      "nodes" : [
+        {
+          "id" : "UBERON:0007832-mouse",
+          "type" : "CLASS",
+          "lbl" : "pelvic girdle skeleton (mouse)"
+        },
+        {
+          "id" : "EMAPA:18028",
+          "type" : "CLASS",
+          "lbl" : "pelvic girdle skeleton"
+        },
+        {
+          "id" : "UBERON:0007830-mouse",
+          "type" : "CLASS",
+          "lbl" : "pelvic girdle bone/zone (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0007832-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18028",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18028",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0007830-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0007830-mouse",
+            "EMAPA:18028"
+          ]
+        }
+      ]
+    }
+  ]
+}

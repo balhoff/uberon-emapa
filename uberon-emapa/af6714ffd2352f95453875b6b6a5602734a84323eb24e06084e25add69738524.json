@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:af6714ffd2352f95453875b6b6a5602734a84323eb24e06084e25add69738524",
+      "nodes" : [
+        {
+          "id" : "EMAPA:30747",
+          "type" : "CLASS",
+          "lbl" : "muscle layer of epididymis"
+        },
+        {
+          "id" : "UBERON:0004835-mouse",
+          "type" : "CLASS",
+          "lbl" : "epididymis smooth muscle (mouse)"
+        },
+        {
+          "id" : "UBERON:0006646-mouse",
+          "type" : "CLASS",
+          "lbl" : "muscle layer of epididymis (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:30747",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004835-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0006646-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:30747",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0004835-mouse",
+            "EMAPA:30747"
+          ]
+        }
+      ]
+    }
+  ]
+}

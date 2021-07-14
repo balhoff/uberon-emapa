@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:a7b47c31b17ced332a6e51ae3afb4fa7f3f46f5f17367271b179b4da1b6fddcf",
+      "nodes" : [
+        {
+          "id" : "UBERON:0002895-mouse",
+          "type" : "CLASS",
+          "lbl" : "secondary olfactory cortex (mouse)"
+        },
+        {
+          "id" : "EMAPA:35313",
+          "type" : "CLASS",
+          "lbl" : "entorhinal cortex"
+        },
+        {
+          "id" : "UBERON:0002728-mouse",
+          "type" : "CLASS",
+          "lbl" : "entorhinal cortex (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0002895-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35313",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35313",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002728-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0002728-mouse",
+            "EMAPA:35313"
+          ]
+        }
+      ]
+    }
+  ]
+}

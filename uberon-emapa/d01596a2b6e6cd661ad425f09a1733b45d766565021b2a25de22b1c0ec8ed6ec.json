@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d01596a2b6e6cd661ad425f09a1733b45d766565021b2a25de22b1c0ec8ed6ec",
+      "nodes" : [
+        {
+          "id" : "EMAPA:19180",
+          "type" : "CLASS",
+          "lbl" : "seminal vesicle"
+        },
+        {
+          "id" : "UBERON:0007194-mouse",
+          "type" : "CLASS",
+          "lbl" : "vesicular gland (mouse)"
+        },
+        {
+          "id" : "UBERON:0000998-mouse",
+          "type" : "CLASS",
+          "lbl" : "seminal vesicle (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:19180",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0007194-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0000998-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:19180",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0007194-mouse",
+            "EMAPA:19180"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:35d2e18b584b2457d717f914ce976f1c3ff0e694f33429f68a8f4ca9a3125b82",
+      "nodes" : [
+        {
+          "id" : "EMAPA:37985",
+          "type" : "CLASS",
+          "lbl" : "vestibulo-auditory system"
+        },
+        {
+          "id" : "UBERON:0002105-mouse",
+          "type" : "CLASS",
+          "lbl" : "vestibulo-auditory system (mouse)"
+        },
+        {
+          "id" : "EMAPA:36002",
+          "type" : "CLASS",
+          "lbl" : "auditory system"
+        },
+        {
+          "id" : "UBERON:0016490-mouse",
+          "type" : "CLASS",
+          "lbl" : "auditory system (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:37985",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002105-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:36002",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0016490-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0002105-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:36002",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0002105-mouse",
+            "EMAPA:37985"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0016490-mouse",
+            "EMAPA:36002"
+          ]
+        }
+      ]
+    }
+  ]
+}

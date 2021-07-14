@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2b529e2c24526a044d29e2652818986bd1a30b194750ce2f6ee494f99198288a",
+      "nodes" : [
+        {
+          "id" : "UBERON:0002596-mouse",
+          "type" : "CLASS",
+          "lbl" : "ventral posterior nucleus of thalamus (mouse)"
+        },
+        {
+          "id" : "EMAPA:35912",
+          "type" : "CLASS",
+          "lbl" : "ventral posterior thalamic group"
+        },
+        {
+          "id" : "UBERON:0002939-mouse",
+          "type" : "CLASS",
+          "lbl" : "ventral posteroinferior nucleus (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0002596-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35912",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35912",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002939-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35912",
+            "UBERON:0002939-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:27d4b1467ea71cd991aeab161776957337963bf74bebdbb77900029a4842de80",
+      "nodes" : [
+        {
+          "id" : "UBERON:0004760-mouse",
+          "type" : "CLASS",
+          "lbl" : "gland of anal canal (mouse)"
+        },
+        {
+          "id" : "EMAPA:27233",
+          "type" : "CLASS",
+          "lbl" : "anal canal rostral part gland"
+        },
+        {
+          "id" : "EMAPA:27543",
+          "type" : "CLASS",
+          "lbl" : "anal canal gland"
+        },
+        {
+          "id" : "EMAPA:27221",
+          "type" : "CLASS",
+          "lbl" : "anal canal caudal part gland"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0004760-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:27233",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0004760-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:27543",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:27221",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004760-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:27221",
+            "UBERON:0004760-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

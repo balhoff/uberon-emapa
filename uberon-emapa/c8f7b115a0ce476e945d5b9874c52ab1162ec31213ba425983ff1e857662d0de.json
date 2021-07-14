@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c8f7b115a0ce476e945d5b9874c52ab1162ec31213ba425983ff1e857662d0de",
+      "nodes" : [
+        {
+          "id" : "UBERON:0005685-mouse",
+          "type" : "CLASS",
+          "lbl" : "midgut dorsal mesentery (mouse)"
+        },
+        {
+          "id" : "EMAPA:16722",
+          "type" : "CLASS",
+          "lbl" : "midgut dorsal mesentery"
+        },
+        {
+          "id" : "EMAPA:17040",
+          "type" : "CLASS",
+          "lbl" : "midgut loop dorsal mesentery"
+        },
+        {
+          "id" : "EMAPA:18671",
+          "type" : "CLASS",
+          "lbl" : "jejunum dorsal mesentery"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0005685-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16722",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17040",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005685-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005685-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18671",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17040",
+            "UBERON:0005685-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

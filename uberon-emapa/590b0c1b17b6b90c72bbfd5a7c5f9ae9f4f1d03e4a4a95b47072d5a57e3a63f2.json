@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:590b0c1b17b6b90c72bbfd5a7c5f9ae9f4f1d03e4a4a95b47072d5a57e3a63f2",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17704",
+          "type" : "CLASS",
+          "lbl" : "pleuro-pericardial canal"
+        },
+        {
+          "id" : "UBERON:0006277-mouse",
+          "type" : "CLASS",
+          "lbl" : "pleuropericardial canals (mouse)"
+        },
+        {
+          "id" : "EMAPA:17707",
+          "type" : "CLASS",
+          "lbl" : "pleuro-peritoneal canal"
+        },
+        {
+          "id" : "UBERON:0006279-mouse",
+          "type" : "CLASS",
+          "lbl" : "pleuroperitoneal canal (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17704",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006277-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17707",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006279-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0006279-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17704",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17704",
+            "UBERON:0006277-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0006279-mouse",
+            "EMAPA:17707"
+          ]
+        }
+      ]
+    }
+  ]
+}

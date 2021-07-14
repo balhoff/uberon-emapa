@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b9b4fef17fd1b0c40680fe51f4842955f1cd7ca6a130114c191d8be562091903",
+      "nodes" : [
+        {
+          "id" : "UBERON:0009213-mouse",
+          "type" : "CLASS",
+          "lbl" : "pharyngeal membrane of 1st arch (mouse)"
+        },
+        {
+          "id" : "EMAPA:17281",
+          "type" : "CLASS",
+          "lbl" : "future tympanic membrane"
+        },
+        {
+          "id" : "EMAPA:16121",
+          "type" : "CLASS",
+          "lbl" : "1st branchial membrane"
+        },
+        {
+          "id" : "EMAPA:16992",
+          "type" : "CLASS",
+          "lbl" : "branchial membrane"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0009213-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17281",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16121",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0009213-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0009213-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16992",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16121",
+            "UBERON:0009213-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

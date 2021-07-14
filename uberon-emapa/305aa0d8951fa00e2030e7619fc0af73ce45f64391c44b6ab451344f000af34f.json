@@ -1,0 +1,102 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:305aa0d8951fa00e2030e7619fc0af73ce45f64391c44b6ab451344f000af34f",
+      "nodes" : [
+        {
+          "id" : "UBERON:0003302-mouse",
+          "type" : "CLASS",
+          "lbl" : "roof plate of metencephalon (mouse)"
+        },
+        {
+          "id" : "UBERON:0005568-mouse",
+          "type" : "CLASS",
+          "lbl" : "rhombomere 1 roof plate (mouse)"
+        },
+        {
+          "id" : "EMAPA:16487",
+          "type" : "CLASS",
+          "lbl" : "rhombomere 2 roof plate"
+        },
+        {
+          "id" : "UBERON:0005572-mouse",
+          "type" : "CLASS",
+          "lbl" : "rhombomere 2 roof plate (mouse)"
+        },
+        {
+          "id" : "EMAPA:16483",
+          "type" : "CLASS",
+          "lbl" : "rhombomere 1 roof plate"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0003302-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16487",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003302-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16483",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16483",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005568-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16487",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005572-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16483",
+            "UBERON:0005568-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0005572-mouse",
+            "EMAPA:16487"
+          ]
+        }
+      ]
+    }
+  ]
+}

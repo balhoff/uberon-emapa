@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:43d432f05842c9ce296aa80462a81123588f2da07e8a8dd0032c512c0e934e0a",
+      "nodes" : [
+        {
+          "id" : "EMAPA:35589",
+          "type" : "CLASS",
+          "lbl" : "neocortex region"
+        },
+        {
+          "id" : "UBERON:0001950-mouse",
+          "type" : "CLASS",
+          "lbl" : "neocortex (mouse)"
+        },
+        {
+          "id" : "EMAPA:32842",
+          "type" : "CLASS",
+          "lbl" : "neocortex"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:35589",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001950-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001950-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32842",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35589",
+            "UBERON:0001950-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

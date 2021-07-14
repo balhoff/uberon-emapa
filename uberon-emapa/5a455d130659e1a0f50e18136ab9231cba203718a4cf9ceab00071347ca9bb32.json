@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5a455d130659e1a0f50e18136ab9231cba203718a4cf9ceab00071347ca9bb32",
+      "nodes" : [
+        {
+          "id" : "UBERON:0004486-mouse",
+          "type" : "CLASS",
+          "lbl" : "musculature of perineum (mouse)"
+        },
+        {
+          "id" : "EMAPA:36629",
+          "type" : "CLASS",
+          "lbl" : "perineal muscle"
+        },
+        {
+          "id" : "UBERON:0002379-mouse",
+          "type" : "CLASS",
+          "lbl" : "perineal muscle (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0004486-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:36629",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:36629",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002379-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0002379-mouse",
+            "EMAPA:36629"
+          ]
+        }
+      ]
+    }
+  ]
+}

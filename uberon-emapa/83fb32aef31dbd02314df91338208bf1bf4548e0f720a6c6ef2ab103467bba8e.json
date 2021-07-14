@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:83fb32aef31dbd02314df91338208bf1bf4548e0f720a6c6ef2ab103467bba8e",
+      "nodes" : [
+        {
+          "id" : "EMAPA:35934",
+          "type" : "CLASS",
+          "lbl" : "hindlimb bone"
+        },
+        {
+          "id" : "UBERON:0010742-mouse",
+          "type" : "CLASS",
+          "lbl" : "bone of pelvic complex (mouse)"
+        },
+        {
+          "id" : "EMAPA:32633",
+          "type" : "CLASS",
+          "lbl" : "hindlimb skeleton"
+        },
+        {
+          "id" : "UBERON:0001441-mouse",
+          "type" : "CLASS",
+          "lbl" : "hindlimb skeleton (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:35934",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0010742-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:32633",
+          "pred" : "is_a",
+          "obj" : "UBERON:0010742-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:32633",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001441-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35934",
+            "UBERON:0010742-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:32633",
+            "UBERON:0001441-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

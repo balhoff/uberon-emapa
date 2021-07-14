@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f967118c30c8462d8c55bd4756747f9eb952b05beb30e180d76906123e5f5469",
+      "nodes" : [
+        {
+          "id" : "UBERON:0012287-mouse",
+          "type" : "CLASS",
+          "lbl" : "Rathkes pouch epithelium (mouse)"
+        },
+        {
+          "id" : "EMAPA:25036",
+          "type" : "CLASS",
+          "lbl" : "Rathke's pouch wall"
+        },
+        {
+          "id" : "UBERON:0000060-mouse",
+          "type" : "CLASS",
+          "lbl" : "anatomical wall (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0012287-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:25036",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:25036",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0000060-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:25036",
+            "UBERON:0000060-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

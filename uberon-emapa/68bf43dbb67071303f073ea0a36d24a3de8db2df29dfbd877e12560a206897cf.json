@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:68bf43dbb67071303f073ea0a36d24a3de8db2df29dfbd877e12560a206897cf",
+      "nodes" : [
+        {
+          "id" : "EMAPA:19170",
+          "type" : "CLASS",
+          "lbl" : "glans of female genital tubercle"
+        },
+        {
+          "id" : "UBERON:0013240-mouse",
+          "type" : "CLASS",
+          "lbl" : "future glans clitoris (mouse)"
+        },
+        {
+          "id" : "EMAPA:30829",
+          "type" : "CLASS",
+          "lbl" : "glans clitoris"
+        },
+        {
+          "id" : "UBERON:0006653-mouse",
+          "type" : "CLASS",
+          "lbl" : "glans clitoris (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:19170",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0013240-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:30829",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006653-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0006653-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:19170",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:19170",
+            "UBERON:0013240-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:30829",
+            "UBERON:0006653-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

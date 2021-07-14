@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9afecd899e875facf747abb8b17a725f27332e4e9530b86afdd2d880fcedb00f",
+      "nodes" : [
+        {
+          "id" : "UBERON:0005202-mouse",
+          "type" : "CLASS",
+          "lbl" : "distal straight tubule macula densa (mouse)"
+        },
+        {
+          "id" : "EMAPA:28399",
+          "type" : "CLASS",
+          "lbl" : "macula densa"
+        },
+        {
+          "id" : "UBERON:0002335-mouse",
+          "type" : "CLASS",
+          "lbl" : "macula densa (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0005202-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:28399",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:28399",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002335-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005202-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0002335-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0002335-mouse",
+            "EMAPA:28399"
+          ]
+        }
+      ]
+    }
+  ]
+}

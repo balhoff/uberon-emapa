@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ec980332afc493d618e6c8d060b7da26bda839f4173bf25b5b569d0c9f4f90ff",
+      "nodes" : [
+        {
+          "id" : "EMAPA:18771",
+          "type" : "CLASS",
+          "lbl" : "hair follicle"
+        },
+        {
+          "id" : "UBERON:0002073-mouse",
+          "type" : "CLASS",
+          "lbl" : "hair follicle (mouse)"
+        },
+        {
+          "id" : "EMAPA:29741",
+          "type" : "CLASS",
+          "lbl" : "hair follicle of scrotum dermal layer"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:18771",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002073-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0002073-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:29741",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0002073-mouse",
+            "EMAPA:18771"
+          ]
+        }
+      ]
+    }
+  ]
+}

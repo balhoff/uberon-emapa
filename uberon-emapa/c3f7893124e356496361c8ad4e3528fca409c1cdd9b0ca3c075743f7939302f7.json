@@ -1,0 +1,97 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c3f7893124e356496361c8ad4e3528fca409c1cdd9b0ca3c075743f7939302f7",
+      "nodes" : [
+        {
+          "id" : "UBERON:0011183-mouse",
+          "type" : "CLASS",
+          "lbl" : "corpus spongiosum of penis (mouse)"
+        },
+        {
+          "id" : "EMAPA:29856",
+          "type" : "CLASS",
+          "lbl" : "corpus cavernosum of glans penis"
+        },
+        {
+          "id" : "UBERON:0004713-mouse",
+          "type" : "CLASS",
+          "lbl" : "corpus cavernosum penis (mouse)"
+        },
+        {
+          "id" : "EMAPA:29850",
+          "type" : "CLASS",
+          "lbl" : "corpus cavernosum of penile body"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0011183-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:29856",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:29856",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004713-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:29850",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0011183-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:29850",
+          "pred" : "is_a",
+          "obj" : "UBERON:0004713-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0004713-mouse",
+            "EMAPA:29856"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:29850",
+            "UBERON:0011183-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

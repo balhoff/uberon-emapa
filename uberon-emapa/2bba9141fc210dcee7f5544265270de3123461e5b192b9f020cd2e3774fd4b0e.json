@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2bba9141fc210dcee7f5544265270de3123461e5b192b9f020cd2e3774fd4b0e",
+      "nodes" : [
+        {
+          "id" : "UBERON:0003059-mouse",
+          "type" : "CLASS",
+          "lbl" : "presomitic mesoderm (mouse)"
+        },
+        {
+          "id" : "EMAPA:16752",
+          "type" : "CLASS",
+          "lbl" : "tail unsegmented mesenchyme"
+        },
+        {
+          "id" : "EMAPA:16189",
+          "type" : "CLASS",
+          "lbl" : "trunk unsegmented mesenchyme"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0003059-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16752",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16189",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003059-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16189",
+            "UBERON:0003059-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

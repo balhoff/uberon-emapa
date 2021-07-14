@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e97475e0d59b15140c4e35908197898d79d768615b809140cf1393e76d3dd37c",
+      "nodes" : [
+        {
+          "id" : "UBERON:0013702-mouse",
+          "type" : "CLASS",
+          "lbl" : "body proper (mouse)"
+        },
+        {
+          "id" : "UBERON:0000475-mouse",
+          "type" : "CLASS",
+          "lbl" : "organism subdivision (mouse)"
+        },
+        {
+          "id" : "EMAPA:36031",
+          "type" : "CLASS",
+          "lbl" : "body region"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0013702-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0000475-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:36031",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0000475-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0013702-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:36031",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0000475-mouse",
+            "EMAPA:36031"
+          ]
+        }
+      ]
+    }
+  ]
+}

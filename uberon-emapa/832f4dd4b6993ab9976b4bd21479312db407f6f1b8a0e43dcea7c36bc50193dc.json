@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:832f4dd4b6993ab9976b4bd21479312db407f6f1b8a0e43dcea7c36bc50193dc",
+      "nodes" : [
+        {
+          "id" : "UBERON:0012238-mouse",
+          "type" : "CLASS",
+          "lbl" : "ureteric bud trunk (mouse)"
+        },
+        {
+          "id" : "EMAPA:27608",
+          "type" : "CLASS",
+          "lbl" : "ureteric stalk"
+        },
+        {
+          "id" : "EMAPA:27697",
+          "type" : "CLASS",
+          "lbl" : "ureteric trunk"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0012238-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:27608",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:27697",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0012238-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:27697",
+            "UBERON:0012238-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

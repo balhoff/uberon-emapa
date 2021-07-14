@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:61a81db1b07c459bcf9c7af318f6894a6cb514cd477ba468c41e23bff20cd84d",
+      "nodes" : [
+        {
+          "id" : "UBERON:0007122-mouse",
+          "type" : "CLASS",
+          "lbl" : "pharyngeal pouch 1 (mouse)"
+        },
+        {
+          "id" : "EMAPA:16125",
+          "type" : "CLASS",
+          "lbl" : "1st branchial pouch endoderm"
+        },
+        {
+          "id" : "EMAPA:16124",
+          "type" : "CLASS",
+          "lbl" : "1st branchial pouch"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0007122-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16125",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16124",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0007122-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0007122-mouse",
+            "EMAPA:16124"
+          ]
+        }
+      ]
+    }
+  ]
+}

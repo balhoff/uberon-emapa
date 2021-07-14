@@ -1,0 +1,210 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c8fe95176d6c0d2ccc427daea0902f1487d39385b1def6d84e005f5e226e2959",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17301",
+          "type" : "CLASS",
+          "lbl" : "superior semicircular canal epithelium"
+        },
+        {
+          "id" : "UBERON:0003241-mouse",
+          "type" : "CLASS",
+          "lbl" : "epithelium of utricle (mouse)"
+        },
+        {
+          "id" : "UBERON:0003239-mouse",
+          "type" : "CLASS",
+          "lbl" : "epithelium of posterior semicircular canal (mouse)"
+        },
+        {
+          "id" : "EMAPA:17295",
+          "type" : "CLASS",
+          "lbl" : "utricle epithelium"
+        },
+        {
+          "id" : "EMAPA:17298",
+          "type" : "CLASS",
+          "lbl" : "posterior semicircular canal epithelium"
+        },
+        {
+          "id" : "UBERON:0003238-mouse",
+          "type" : "CLASS",
+          "lbl" : "epithelium of superior semicircular canal (mouse)"
+        },
+        {
+          "id" : "UBERON:0005657-mouse",
+          "type" : "CLASS",
+          "lbl" : "crus commune epithelium (mouse)"
+        },
+        {
+          "id" : "EMAPA:17823",
+          "type" : "CLASS",
+          "lbl" : "lateral semicircular canal epithelium"
+        },
+        {
+          "id" : "EMAPA:17820",
+          "type" : "CLASS",
+          "lbl" : "crus commune epithelium"
+        },
+        {
+          "id" : "UBERON:0003240-mouse",
+          "type" : "CLASS",
+          "lbl" : "epithelium of lateral semicircular canal (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17823",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003240-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17298",
+          "pred" : "is_a",
+          "obj" : "UBERON:0003241-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17298",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003239-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17301",
+          "pred" : "is_a",
+          "obj" : "UBERON:0003241-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003241-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17820",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17820",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005657-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17295",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003241-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17301",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003238-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003241-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17823",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0003238-mouse",
+            "EMAPA:17301"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0003239-mouse",
+            "EMAPA:17298"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:17820",
+            "UBERON:0005657-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:17823",
+            "UBERON:0003240-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:17295",
+            "UBERON:0003241-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

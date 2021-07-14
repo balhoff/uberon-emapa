@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:580eccc3426e2973dff89a119d13ab4cc9baaf4f1ef3d927d2ebc81943faaedc",
+      "nodes" : [
+        {
+          "id" : "UBERON:0002004-mouse",
+          "type" : "CLASS",
+          "lbl" : "trunk of sciatic nerve (mouse)"
+        },
+        {
+          "id" : "EMAPA:18577",
+          "type" : "CLASS",
+          "lbl" : "sciatic nerve"
+        },
+        {
+          "id" : "UBERON:0001322-mouse",
+          "type" : "CLASS",
+          "lbl" : "sciatic nerve (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0002004-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18577",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18577",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001322-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0001322-mouse",
+            "EMAPA:18577"
+          ]
+        }
+      ]
+    }
+  ]
+}

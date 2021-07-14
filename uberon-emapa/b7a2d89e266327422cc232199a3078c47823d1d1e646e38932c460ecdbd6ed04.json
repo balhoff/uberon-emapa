@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b7a2d89e266327422cc232199a3078c47823d1d1e646e38932c460ecdbd6ed04",
+      "nodes" : [
+        {
+          "id" : "UBERON:0001229-mouse",
+          "type" : "CLASS",
+          "lbl" : "renal corpuscle (mouse)"
+        },
+        {
+          "id" : "EMAPA:28236",
+          "type" : "CLASS",
+          "lbl" : "mature renal corpuscle"
+        },
+        {
+          "id" : "EMAPA:35726",
+          "type" : "CLASS",
+          "lbl" : "renal corpuscle"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0001229-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:28236",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35726",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001229-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35726",
+            "UBERON:0001229-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

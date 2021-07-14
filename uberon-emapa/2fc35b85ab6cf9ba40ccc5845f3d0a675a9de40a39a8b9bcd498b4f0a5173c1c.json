@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2fc35b85ab6cf9ba40ccc5845f3d0a675a9de40a39a8b9bcd498b4f0a5173c1c",
+      "nodes" : [
+        {
+          "id" : "UBERON:0010189-mouse",
+          "type" : "CLASS",
+          "lbl" : "right atrium venous valve (mouse)"
+        },
+        {
+          "id" : "EMAPA:17010",
+          "type" : "CLASS",
+          "lbl" : "common atrial chamber right part venous valve"
+        },
+        {
+          "id" : "EMAPA:17328",
+          "type" : "CLASS",
+          "lbl" : "right atrium venous valve"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0010189-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17010",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17328",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0010189-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0010189-mouse",
+            "EMAPA:17328"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+pattern_name: mouse structure
+
+classes:
+  mouse: 'NCBITaxon:10090'
+  Thing: 'owl:Thing'
+
+relations:
+  in_taxon: 'RO:0002162'
+
+vars:
+  term: 'Thing'
+
+name:
+  text: "%s (mouse)"
+  vars:
+    - term
+
+equivalentTo:
+  text: "%s and 'in_taxon' some 'mouse'"
+  vars:
+    - term

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:129669b5772d10b9bb264c034d720c830ab2aef766afe21c07a171ce9ddebcd0",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17839",
+          "type" : "CLASS",
+          "lbl" : "lens anterior epithelium"
+        },
+        {
+          "id" : "UBERON:0005614-mouse",
+          "type" : "CLASS",
+          "lbl" : "lens anterior epithelium (mouse)"
+        },
+        {
+          "id" : "EMAPA:17304",
+          "type" : "CLASS",
+          "lbl" : "lens vesicle anterior epithelium"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17839",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005614-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005614-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17304",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0005614-mouse",
+            "EMAPA:17839"
+          ]
+        }
+      ]
+    }
+  ]
+}

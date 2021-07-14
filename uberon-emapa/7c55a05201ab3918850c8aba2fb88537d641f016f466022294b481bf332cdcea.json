@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7c55a05201ab3918850c8aba2fb88537d641f016f466022294b481bf332cdcea",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16104",
+          "type" : "CLASS",
+          "lbl" : "cardiovascular system"
+        },
+        {
+          "id" : "UBERON:0004535-mouse",
+          "type" : "CLASS",
+          "lbl" : "cardiovascular system (mouse)"
+        },
+        {
+          "id" : "EMAPA:16370",
+          "type" : "CLASS",
+          "lbl" : "extraembryonic vascular system"
+        },
+        {
+          "id" : "UBERON:0014701-mouse",
+          "type" : "CLASS",
+          "lbl" : "extraembryonic vascular system (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16104",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004535-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0004535-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16370",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16370",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0014701-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16104",
+            "UBERON:0004535-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:16370",
+            "UBERON:0014701-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

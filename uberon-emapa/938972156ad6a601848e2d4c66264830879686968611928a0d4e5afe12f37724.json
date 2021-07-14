@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:938972156ad6a601848e2d4c66264830879686968611928a0d4e5afe12f37724",
+      "nodes" : [
+        {
+          "id" : "UBERON:0003902-mouse",
+          "type" : "CLASS",
+          "lbl" : "retinal neural layer (mouse)"
+        },
+        {
+          "id" : "EMAPA:18590",
+          "type" : "CLASS",
+          "lbl" : "neural retina"
+        },
+        {
+          "id" : "EMAPA:17171",
+          "type" : "CLASS",
+          "lbl" : "neural retinal epithelium"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0003902-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18590",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17171",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003902-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17171",
+            "UBERON:0003902-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

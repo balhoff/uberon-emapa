@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c4a727ae8c85276f1713140a6325ec56f029cac1ce835942b84c018ed8d65e06",
+      "nodes" : [
+        {
+          "id" : "EMAPA:26937",
+          "type" : "CLASS",
+          "lbl" : "oral mucosa"
+        },
+        {
+          "id" : "UBERON:0003729-mouse",
+          "type" : "CLASS",
+          "lbl" : "mouth mucosa (mouse)"
+        },
+        {
+          "id" : "UBERON:0003343-mouse",
+          "type" : "CLASS",
+          "lbl" : "mucosa of oral region (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:26937",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003729-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003343-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0003729-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003343-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:26937",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:26937",
+            "UBERON:0003729-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

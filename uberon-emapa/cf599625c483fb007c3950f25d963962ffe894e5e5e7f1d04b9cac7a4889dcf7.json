@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cf599625c483fb007c3950f25d963962ffe894e5e5e7f1d04b9cac7a4889dcf7",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16056",
+          "type" : "CLASS",
+          "lbl" : "intermediate endoderm"
+        },
+        {
+          "id" : "UBERON:0003064-mouse",
+          "type" : "CLASS",
+          "lbl" : "intermediate mesoderm (mouse)"
+        },
+        {
+          "id" : "EMAPA:16178",
+          "type" : "CLASS",
+          "lbl" : "intermediate mesenchyme"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16056",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003064-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003064-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16178",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16056",
+            "UBERON:0003064-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

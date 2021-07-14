@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:767fa22007a962c558e9ae1243b03f7be3a4fd68a4572ae19731c21b8ef87770",
+      "nodes" : [
+        {
+          "id" : "EMAPA:32743",
+          "type" : "CLASS",
+          "lbl" : "blood vessel"
+        },
+        {
+          "id" : "EMAPA:35993",
+          "type" : "CLASS",
+          "lbl" : "vascular element"
+        },
+        {
+          "id" : "UBERON:0001981-mouse",
+          "type" : "CLASS",
+          "lbl" : "blood vessel (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:32743",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:35993",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:32743",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001981-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001981-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35993",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:32743",
+            "UBERON:0001981-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2c58b097a25ca6435728c15dec8a63bad2f3c0052efd72d22c7676c566b92775",
+      "nodes" : [
+        {
+          "id" : "UBERON:0000933-mouse",
+          "type" : "CLASS",
+          "lbl" : "pharyngeal muscle (mouse)"
+        },
+        {
+          "id" : "EMAPA:18963",
+          "type" : "CLASS",
+          "lbl" : "pharynx skeletal muscle"
+        },
+        {
+          "id" : "UBERON:0003384-mouse",
+          "type" : "CLASS",
+          "lbl" : "skeletal muscle tissue of pharynx (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0000933-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18963",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18963",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003384-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0003384-mouse",
+            "EMAPA:18963"
+          ]
+        }
+      ]
+    }
+  ]
+}

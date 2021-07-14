@@ -1,0 +1,59 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:78abff6c1040cba4a5384bb7ecf0f381aa84e4b136f3c9b808f45f6380a3ebe0",
+      "nodes" : [
+        {
+          "id" : "UBERON:0001740-mouse",
+          "type" : "CLASS",
+          "lbl" : "arytenoid cartilage (mouse)"
+        },
+        {
+          "id" : "EMAPA:17977",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "EMAPA:18695",
+          "type" : "CLASS",
+          "lbl" : "arytenoid cartilage"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0001740-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17977",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18695",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001740-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0001740-mouse",
+            "EMAPA:18695"
+          ]
+        }
+      ]
+    }
+  ]
+}

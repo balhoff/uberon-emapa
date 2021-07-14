@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b4d12de039a552eed0a18e5089e0cf0cc58f7cf48839f972f183e6862b089316",
+      "nodes" : [
+        {
+          "id" : "UBERON:0004715-mouse",
+          "type" : "CLASS",
+          "lbl" : "annulus fibrosus disci intervertebralis (mouse)"
+        },
+        {
+          "id" : "UBERON:0006444-mouse",
+          "type" : "CLASS",
+          "lbl" : "annulus fibrosus (mouse)"
+        },
+        {
+          "id" : "EMAPA:32670",
+          "type" : "CLASS",
+          "lbl" : "annulus fibrosus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0004715-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0006444-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0004715-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32670",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:32670",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006444-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0006444-mouse",
+            "EMAPA:32670"
+          ]
+        }
+      ]
+    }
+  ]
+}

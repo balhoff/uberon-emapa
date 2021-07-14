@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:23546300409e6edec77519ff6448d2605619a35c1570fe39f5f59192f5ac615d",
+      "nodes" : [
+        {
+          "id" : "EMAPA:32660",
+          "type" : "CLASS",
+          "lbl" : "meninges"
+        },
+        {
+          "id" : "UBERON:0010743-mouse",
+          "type" : "CLASS",
+          "lbl" : "meningeal cluster (mouse)"
+        },
+        {
+          "id" : "UBERON:0002360-mouse",
+          "type" : "CLASS",
+          "lbl" : "meninx (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:32660",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0010743-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0002360-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32660",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0010743-mouse",
+            "EMAPA:32660"
+          ]
+        }
+      ]
+    }
+  ]
+}

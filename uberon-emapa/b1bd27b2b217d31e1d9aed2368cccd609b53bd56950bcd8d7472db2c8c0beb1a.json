@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b1bd27b2b217d31e1d9aed2368cccd609b53bd56950bcd8d7472db2c8c0beb1a",
+      "nodes" : [
+        {
+          "id" : "EMAPA:18725",
+          "type" : "CLASS",
+          "lbl" : "xiphisternum"
+        },
+        {
+          "id" : "UBERON:0006430-mouse",
+          "type" : "CLASS",
+          "lbl" : "xiphoid cartilage (mouse)"
+        },
+        {
+          "id" : "UBERON:0002207-mouse",
+          "type" : "CLASS",
+          "lbl" : "xiphoid process (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:18725",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006430-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0002207-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18725",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:18725",
+            "UBERON:0006430-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

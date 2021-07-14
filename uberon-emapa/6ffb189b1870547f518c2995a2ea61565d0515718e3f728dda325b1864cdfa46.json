@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6ffb189b1870547f518c2995a2ea61565d0515718e3f728dda325b1864cdfa46",
+      "nodes" : [
+        {
+          "id" : "UBERON:0002097-mouse",
+          "type" : "CLASS",
+          "lbl" : "skin of body (mouse)"
+        },
+        {
+          "id" : "EMAPA:17525",
+          "type" : "CLASS",
+          "lbl" : "skin"
+        },
+        {
+          "id" : "UBERON:0000014-mouse",
+          "type" : "CLASS",
+          "lbl" : "zone of skin (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0002097-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17525",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17525",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0000014-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0000014-mouse",
+            "EMAPA:17525"
+          ]
+        }
+      ]
+    }
+  ]
+}

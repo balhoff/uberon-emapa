@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:68f933fef79fc93fe42c05987b4cd96f27a828e14fea692647e67cc0371124c0",
+      "nodes" : [
+        {
+          "id" : "EMAPA:32754",
+          "type" : "CLASS",
+          "lbl" : "branchial arch endoderm"
+        },
+        {
+          "id" : "UBERON:0009722-mouse",
+          "type" : "CLASS",
+          "lbl" : "entire pharyngeal arch endoderm (mouse)"
+        },
+        {
+          "id" : "UBERON:0007690-mouse",
+          "type" : "CLASS",
+          "lbl" : "early pharyngeal endoderm (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:32754",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0009722-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0007690-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32754",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:32754",
+            "UBERON:0009722-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

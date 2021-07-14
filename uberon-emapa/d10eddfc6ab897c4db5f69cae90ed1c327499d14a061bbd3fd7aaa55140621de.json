@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d10eddfc6ab897c4db5f69cae90ed1c327499d14a061bbd3fd7aaa55140621de",
+      "nodes" : [
+        {
+          "id" : "EMAPA:28230",
+          "type" : "CLASS",
+          "lbl" : "afferent arteriole of maturing renal corpuscle"
+        },
+        {
+          "id" : "UBERON:0004639-mouse",
+          "type" : "CLASS",
+          "lbl" : "renal afferent arteriole (mouse)"
+        },
+        {
+          "id" : "EMAPA:28266",
+          "type" : "CLASS",
+          "lbl" : "afferent arteriole of mature renal corpuscle"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:28230",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004639-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0004639-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:28266",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0004639-mouse",
+            "EMAPA:28230"
+          ]
+        }
+      ]
+    }
+  ]
+}

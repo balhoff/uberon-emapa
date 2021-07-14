@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9d4881e15b918dd5bc42e96a527ea26d6a8b3dbac84d4efb9bcbfe8aca0902d4",
+      "nodes" : [
+        {
+          "id" : "EMAPA:29304",
+          "type" : "CLASS",
+          "lbl" : "male cystic vesicular appendage"
+        },
+        {
+          "id" : "UBERON:0006651-mouse",
+          "type" : "CLASS",
+          "lbl" : "appendix testis (mouse)"
+        },
+        {
+          "id" : "EMAPA:19087",
+          "type" : "CLASS",
+          "lbl" : "appendix testis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:29304",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006651-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0006651-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:19087",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:29304",
+            "UBERON:0006651-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

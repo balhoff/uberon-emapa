@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4a438dc031197f6471160a58282faf14c19efe995199e6a398cf5ff6a3f6e0cc",
+      "nodes" : [
+        {
+          "id" : "UBERON:0006241-mouse",
+          "type" : "CLASS",
+          "lbl" : "future spinal cord (mouse)"
+        },
+        {
+          "id" : "EMAPA:16092",
+          "type" : "CLASS",
+          "lbl" : "future spinal cord"
+        },
+        {
+          "id" : "EMAPA:16755",
+          "type" : "CLASS",
+          "lbl" : "tail future spinal cord"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0006241-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16092",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16755",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0006241-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0006241-mouse",
+            "EMAPA:16755"
+          ]
+        }
+      ]
+    }
+  ]
+}

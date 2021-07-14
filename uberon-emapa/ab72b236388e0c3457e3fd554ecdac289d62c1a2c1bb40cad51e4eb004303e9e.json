@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ab72b236388e0c3457e3fd554ecdac289d62c1a2c1bb40cad51e4eb004303e9e",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16539",
+          "type" : "CLASS",
+          "lbl" : "optic eminence surface ectoderm"
+        },
+        {
+          "id" : "UBERON:0005234-mouse",
+          "type" : "CLASS",
+          "lbl" : "optic eminence ectoderm (mouse)"
+        },
+        {
+          "id" : "UBERON:0005216-mouse",
+          "type" : "CLASS",
+          "lbl" : "optic eminence surface ectoderm (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16539",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005234-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005216-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16539",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0005234-mouse",
+            "EMAPA:16539"
+          ]
+        }
+      ]
+    }
+  ]
+}

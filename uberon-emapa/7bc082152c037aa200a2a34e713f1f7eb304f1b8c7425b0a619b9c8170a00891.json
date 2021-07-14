@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7bc082152c037aa200a2a34e713f1f7eb304f1b8c7425b0a619b9c8170a00891",
+      "nodes" : [
+        {
+          "id" : "UBERON:0004063-mouse",
+          "type" : "CLASS",
+          "lbl" : "spinal cord alar plate (mouse)"
+        },
+        {
+          "id" : "EMAPA:17581",
+          "type" : "CLASS",
+          "lbl" : "alar columns"
+        },
+        {
+          "id" : "EMAPA:17149",
+          "type" : "CLASS",
+          "lbl" : "neural tube alar columns"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0004063-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17581",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17149",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004063-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17149",
+            "UBERON:0004063-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

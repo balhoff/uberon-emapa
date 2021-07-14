@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5e073708c54f96a291bfd1edbd4d1a5ec67cfe849d44e2f2b4e03729c7adeac1",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17172",
+          "type" : "CLASS",
+          "lbl" : "pigmented retinal epithelium"
+        },
+        {
+          "id" : "UBERON:0001782-mouse",
+          "type" : "CLASS",
+          "lbl" : "pigmented layer of retina (mouse)"
+        },
+        {
+          "id" : "EMAPA:35738",
+          "type" : "CLASS",
+          "lbl" : "retina epithelium"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17172",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001782-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17172",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:35738",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001782-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35738",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0001782-mouse",
+            "EMAPA:17172"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2f69ec3ed4ead148e66ca6b610d0a864ed489b469abf234b1c8985b122616964",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17765",
+          "type" : "CLASS",
+          "lbl" : "diencephalon arachnoid mater"
+        },
+        {
+          "id" : "UBERON:0003558-mouse",
+          "type" : "CLASS",
+          "lbl" : "diencephalon arachnoid mater (mouse)"
+        },
+        {
+          "id" : "UBERON:0005400-mouse",
+          "type" : "CLASS",
+          "lbl" : "telencephalon arachnoid mater (mouse)"
+        },
+        {
+          "id" : "UBERON:0003556-mouse",
+          "type" : "CLASS",
+          "lbl" : "forebrain arachnoid mater (mouse)"
+        },
+        {
+          "id" : "EMAPA:37544",
+          "type" : "CLASS",
+          "lbl" : "forebrain arachnoid mater"
+        },
+        {
+          "id" : "EMAPA:17775",
+          "type" : "CLASS",
+          "lbl" : "telencephalon arachnoid mater"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17775",
+          "pred" : "is_a",
+          "obj" : "UBERON:0003556-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17775",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:37544",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:37544",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003556-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17765",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:37544",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003558-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0003556-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17765",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003558-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17765",
+          "pred" : "is_a",
+          "obj" : "UBERON:0003556-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005400-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0003556-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17775",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005400-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17765",
+            "UBERON:0003558-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:37544",
+            "UBERON:0003556-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:17775",
+            "UBERON:0005400-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

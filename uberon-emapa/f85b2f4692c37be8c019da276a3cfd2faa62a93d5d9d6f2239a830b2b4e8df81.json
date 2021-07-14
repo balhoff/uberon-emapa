@@ -1,0 +1,126 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f85b2f4692c37be8c019da276a3cfd2faa62a93d5d9d6f2239a830b2b4e8df81",
+      "nodes" : [
+        {
+          "id" : "UBERON:0005570-mouse",
+          "type" : "CLASS",
+          "lbl" : "rhombomere 2 floor plate (mouse)"
+        },
+        {
+          "id" : "EMAPA:16291",
+          "type" : "CLASS",
+          "lbl" : "rhombomere 1 floor plate"
+        },
+        {
+          "id" : "UBERON:0003310-mouse",
+          "type" : "CLASS",
+          "lbl" : "floor plate of metencephalon (mouse)"
+        },
+        {
+          "id" : "UBERON:0005566-mouse",
+          "type" : "CLASS",
+          "lbl" : "rhombomere 1 floor plate (mouse)"
+        },
+        {
+          "id" : "EMAPA:16294",
+          "type" : "CLASS",
+          "lbl" : "rhombomere 2 floor plate"
+        },
+        {
+          "id" : "EMAPA:17258",
+          "type" : "CLASS",
+          "lbl" : "metencephalon floor plate"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16294",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005570-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003310-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16291",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16291",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005566-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17258",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003310-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003310-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16294",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16291",
+            "UBERON:0005566-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0003310-mouse",
+            "EMAPA:17258"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:16294",
+            "UBERON:0005570-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ca259bd3a7704dbfe0377f8807f62d5b5cfab63e763a870f0883b06700a3c437",
+      "nodes" : [
+        {
+          "id" : "UBERON:0011968-mouse",
+          "type" : "CLASS",
+          "lbl" : "radio-carpal joint (mouse)"
+        },
+        {
+          "id" : "EMAPA:19205",
+          "type" : "CLASS",
+          "lbl" : "radio-carpal joint"
+        },
+        {
+          "id" : "UBERON:0001491-mouse",
+          "type" : "CLASS",
+          "lbl" : "wrist joint (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0011968-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:19205",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:19205",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001491-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0011968-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0001491-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:19205",
+            "UBERON:0001491-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

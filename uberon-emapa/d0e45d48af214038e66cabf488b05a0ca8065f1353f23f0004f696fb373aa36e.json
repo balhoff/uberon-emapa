@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d0e45d48af214038e66cabf488b05a0ca8065f1353f23f0004f696fb373aa36e",
+      "nodes" : [
+        {
+          "id" : "UBERON:0002165-mouse",
+          "type" : "CLASS",
+          "lbl" : "endocardium (mouse)"
+        },
+        {
+          "id" : "EMAPA:32686",
+          "type" : "CLASS",
+          "lbl" : "endocardial lining"
+        },
+        {
+          "id" : "EMAPA:17868",
+          "type" : "CLASS",
+          "lbl" : "endocardial tissue"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0002165-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32686",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17868",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002165-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0002165-mouse",
+            "EMAPA:17868"
+          ]
+        }
+      ]
+    }
+  ]
+}

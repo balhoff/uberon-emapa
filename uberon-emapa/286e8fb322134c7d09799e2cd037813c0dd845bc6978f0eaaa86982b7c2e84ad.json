@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:286e8fb322134c7d09799e2cd037813c0dd845bc6978f0eaaa86982b7c2e84ad",
+      "nodes" : [
+        {
+          "id" : "EMAPA:28491",
+          "type" : "CLASS",
+          "lbl" : "mature nephron"
+        },
+        {
+          "id" : "EMAPA:35592",
+          "type" : "CLASS",
+          "lbl" : "nephron"
+        },
+        {
+          "id" : "UBERON:0001285-mouse",
+          "type" : "CLASS",
+          "lbl" : "nephron (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:28491",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:35592",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:28491",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001285-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001285-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35592",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:28491",
+            "UBERON:0001285-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

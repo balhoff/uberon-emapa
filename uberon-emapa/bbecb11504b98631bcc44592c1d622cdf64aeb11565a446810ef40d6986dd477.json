@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bbecb11504b98631bcc44592c1d622cdf64aeb11565a446810ef40d6986dd477",
+      "nodes" : [
+        {
+          "id" : "UBERON:0003282-mouse",
+          "type" : "CLASS",
+          "lbl" : "mesentery of heart (mouse)"
+        },
+        {
+          "id" : "EMAPA:16212",
+          "type" : "CLASS",
+          "lbl" : "heart mesentery"
+        },
+        {
+          "id" : "UBERON:0010277-mouse",
+          "type" : "CLASS",
+          "lbl" : "mesocardium (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0003282-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16212",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16212",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0010277-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16212",
+            "UBERON:0010277-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

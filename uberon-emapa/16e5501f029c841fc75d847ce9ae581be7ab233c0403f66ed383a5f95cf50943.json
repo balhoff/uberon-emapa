@@ -1,0 +1,122 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:16e5501f029c841fc75d847ce9ae581be7ab233c0403f66ed383a5f95cf50943",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17381",
+          "type" : "CLASS",
+          "lbl" : "reproductive system"
+        },
+        {
+          "id" : "UBERON:0000991-mouse",
+          "type" : "CLASS",
+          "lbl" : "gonad (mouse)"
+        },
+        {
+          "id" : "EMAPA:37731",
+          "type" : "CLASS",
+          "lbl" : "reproductive organ"
+        },
+        {
+          "id" : "UBERON:0000990-mouse",
+          "type" : "CLASS",
+          "lbl" : "reproductive system (mouse)"
+        },
+        {
+          "id" : "UBERON:0003133-mouse",
+          "type" : "CLASS",
+          "lbl" : "reproductive organ (mouse)"
+        },
+        {
+          "id" : "EMAPA:17383",
+          "type" : "CLASS",
+          "lbl" : "gonad"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17383",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0000991-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17381",
+          "pred" : "is_a",
+          "obj" : "UBERON:0003133-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:37731",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003133-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0000991-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0003133-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17381",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0000990-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:37731",
+            "UBERON:0003133-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0000990-mouse",
+            "EMAPA:17381"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0000991-mouse",
+            "EMAPA:17383"
+          ]
+        }
+      ]
+    }
+  ]
+}

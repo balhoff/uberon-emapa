@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6761b6b6d89b36e6eeb878c3c05d65809f5d75582ab010576e6e70a6fc7a3740",
+      "nodes" : [
+        {
+          "id" : "EMAPA:35361",
+          "type" : "CLASS",
+          "lbl" : "future brain roof plate"
+        },
+        {
+          "id" : "UBERON:0003054-mouse",
+          "type" : "CLASS",
+          "lbl" : "roof plate (mouse)"
+        },
+        {
+          "id" : "EMAPA:16168",
+          "type" : "CLASS",
+          "lbl" : "neural tube roof plate"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:35361",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003054-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003054-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16168",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35361",
+            "UBERON:0003054-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

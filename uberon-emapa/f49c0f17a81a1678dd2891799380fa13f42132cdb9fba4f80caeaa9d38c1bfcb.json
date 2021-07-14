@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:f49c0f17a81a1678dd2891799380fa13f42132cdb9fba4f80caeaa9d38c1bfcb",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16723",
+          "type" : "CLASS",
+          "lbl" : "oral region gland"
+        },
+        {
+          "id" : "UBERON:0010047-mouse",
+          "type" : "CLASS",
+          "lbl" : "oral gland (mouse)"
+        },
+        {
+          "id" : "EMAPA:16572",
+          "type" : "CLASS",
+          "lbl" : "stomatodeum gland"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16723",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0010047-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0010047-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16572",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:16723",
+            "UBERON:0010047-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

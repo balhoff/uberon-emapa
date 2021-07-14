@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:eb01b9655cb9e7aac1852c47bffda29deda6aa9021208eefe76da6b17ba5aaea",
+      "nodes" : [
+        {
+          "id" : "UBERON:0002490-mouse",
+          "type" : "CLASS",
+          "lbl" : "frontal suture (mouse)"
+        },
+        {
+          "id" : "EMAPA:35358",
+          "type" : "CLASS",
+          "lbl" : "frontal suture"
+        },
+        {
+          "id" : "EMAPA:19226",
+          "type" : "CLASS",
+          "lbl" : "metopic suture"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0002490-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35358",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:19226",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002490-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:19226",
+            "UBERON:0002490-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

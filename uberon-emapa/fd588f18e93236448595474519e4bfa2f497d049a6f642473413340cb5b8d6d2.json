@@ -1,0 +1,138 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:fd588f18e93236448595474519e4bfa2f497d049a6f642473413340cb5b8d6d2",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17596",
+          "type" : "CLASS",
+          "lbl" : "otic capsule"
+        },
+        {
+          "id" : "EMAPA:18803",
+          "type" : "CLASS",
+          "lbl" : "otic cartilage"
+        },
+        {
+          "id" : "EMAPA:37467",
+          "type" : "CLASS",
+          "lbl" : "cartilaginous otic capsule"
+        },
+        {
+          "id" : "UBERON:0005411-mouse",
+          "type" : "CLASS",
+          "lbl" : "bony otic capsule (mouse)"
+        },
+        {
+          "id" : "UBERON:0005410-mouse",
+          "type" : "CLASS",
+          "lbl" : "cartilaginous otic capsule (mouse)"
+        },
+        {
+          "id" : "EMAPA:37466",
+          "type" : "CLASS",
+          "lbl" : "bony otic capsule"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0005410-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17596",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005411-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17596",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:37466",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005411-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:37467",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005410-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:37467",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:17596",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005410-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:18803",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:37466",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:17596",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:37467",
+            "UBERON:0005410-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:37466",
+            "UBERON:0005411-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

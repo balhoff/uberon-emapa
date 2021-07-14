@@ -1,0 +1,162 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:6fb0228a8213a6c67221de62ea61d3a68c7ae7d71119a7b4f06d0545ff041aa6",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17774",
+          "type" : "CLASS",
+          "lbl" : "telencephalon meninges"
+        },
+        {
+          "id" : "EMAPA:37543",
+          "type" : "CLASS",
+          "lbl" : "forebrain meninges"
+        },
+        {
+          "id" : "UBERON:0003289-mouse",
+          "type" : "CLASS",
+          "lbl" : "meninx of telencephalon (mouse)"
+        },
+        {
+          "id" : "UBERON:0003290-mouse",
+          "type" : "CLASS",
+          "lbl" : "meninx of diencephalon (mouse)"
+        },
+        {
+          "id" : "EMAPA:17764",
+          "type" : "CLASS",
+          "lbl" : "diencephalon meninges"
+        },
+        {
+          "id" : "UBERON:0003548-mouse",
+          "type" : "CLASS",
+          "lbl" : "forebrain meninges (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:37543",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003548-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003290-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0003548-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17764",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:37543",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17764",
+          "pred" : "is_a",
+          "obj" : "UBERON:0003548-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17774",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003289-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17774",
+          "pred" : "is_a",
+          "obj" : "UBERON:0003548-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.8999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003289-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0003548-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17774",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:37543",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17764",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003290-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17764",
+            "UBERON:0003290-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0003548-mouse",
+            "EMAPA:37543"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "UBERON:0003289-mouse",
+            "EMAPA:17774"
+          ]
+        }
+      ]
+    }
+  ]
+}

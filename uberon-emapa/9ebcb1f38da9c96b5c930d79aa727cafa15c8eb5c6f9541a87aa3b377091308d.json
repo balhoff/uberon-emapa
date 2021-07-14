@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9ebcb1f38da9c96b5c930d79aa727cafa15c8eb5c6f9541a87aa3b377091308d",
+      "nodes" : [
+        {
+          "id" : "EMAPA:35377",
+          "type" : "CLASS",
+          "lbl" : "genital swelling"
+        },
+        {
+          "id" : "UBERON:0011754-mouse",
+          "type" : "CLASS",
+          "lbl" : "genital swelling (mouse)"
+        },
+        {
+          "id" : "EMAPA:30074",
+          "type" : "CLASS",
+          "lbl" : "genital swelling"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:35377",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0011754-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0011754-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:30074",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35377",
+            "UBERON:0011754-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

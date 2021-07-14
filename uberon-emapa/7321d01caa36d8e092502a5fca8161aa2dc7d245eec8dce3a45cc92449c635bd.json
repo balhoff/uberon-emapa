@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7321d01caa36d8e092502a5fca8161aa2dc7d245eec8dce3a45cc92449c635bd",
+      "nodes" : [
+        {
+          "id" : "EMAPA:19241",
+          "type" : "CLASS",
+          "lbl" : "inferior olivary nucleus"
+        },
+        {
+          "id" : "UBERON:0002127-mouse",
+          "type" : "CLASS",
+          "lbl" : "inferior olivary complex (mouse)"
+        },
+        {
+          "id" : "UBERON:0007244-mouse",
+          "type" : "CLASS",
+          "lbl" : "inferior olivary nucleus (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:19241",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002127-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0007244-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:19241",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:19241",
+            "UBERON:0002127-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

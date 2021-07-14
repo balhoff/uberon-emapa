@@ -1,0 +1,84 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:af6315704dbe3240c177d280184a85c420e876144f37c4622720125e6cf632ba",
+      "nodes" : [
+        {
+          "id" : "UBERON:0002425-mouse",
+          "type" : "CLASS",
+          "lbl" : "visceral serous pericardium (mouse)"
+        },
+        {
+          "id" : "EMAPA:16589",
+          "type" : "CLASS",
+          "lbl" : "visceral pericardium"
+        },
+        {
+          "id" : "EMAPA:19032",
+          "type" : "CLASS",
+          "lbl" : "visceral serosal pericardium"
+        },
+        {
+          "id" : "UBERON:0007186-mouse",
+          "type" : "CLASS",
+          "lbl" : "pericardial visceral mesothelium (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0002425-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16589",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:19032",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002425-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16589",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0007186-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:19032",
+            "UBERON:0002425-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:16589",
+            "UBERON:0007186-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

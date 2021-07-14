@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ffb784e27e1af1e78c998020266678accc6d06bda11539b040c5b955d0d2f249",
+      "nodes" : [
+        {
+          "id" : "EMAPA:27227",
+          "type" : "CLASS",
+          "lbl" : "anal canal rostral part submucosa"
+        },
+        {
+          "id" : "UBERON:0003329-mouse",
+          "type" : "CLASS",
+          "lbl" : "submucosa of anal canal (mouse)"
+        },
+        {
+          "id" : "EMAPA:27535",
+          "type" : "CLASS",
+          "lbl" : "anal canal submucosa"
+        },
+        {
+          "id" : "EMAPA:27217",
+          "type" : "CLASS",
+          "lbl" : "anal canal caudal part submucosa"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:27227",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003329-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003329-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:27535",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003329-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:27217",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:27227",
+            "UBERON:0003329-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

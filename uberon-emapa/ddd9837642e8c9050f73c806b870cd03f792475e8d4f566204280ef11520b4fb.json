@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ddd9837642e8c9050f73c806b870cd03f792475e8d4f566204280ef11520b4fb",
+      "nodes" : [
+        {
+          "id" : "EMAPA:26942",
+          "type" : "CLASS",
+          "lbl" : "oral epithelium"
+        },
+        {
+          "id" : "EMAPA:16839",
+          "type" : "CLASS",
+          "lbl" : "oral region epithelium"
+        },
+        {
+          "id" : "UBERON:0002424-mouse",
+          "type" : "CLASS",
+          "lbl" : "oral epithelium (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:26942",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:16839",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:26942",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002424-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0002424-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16839",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:26942",
+            "UBERON:0002424-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

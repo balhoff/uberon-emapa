@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:975db9c088597215167248d50825d54153017a6f71fe16ddb2798be7596b5bf4",
+      "nodes" : [
+        {
+          "id" : "EMAPA:36159",
+          "type" : "CLASS",
+          "lbl" : "metatarsal bone"
+        },
+        {
+          "id" : "UBERON:0001448-mouse",
+          "type" : "CLASS",
+          "lbl" : "metatarsal bone (mouse)"
+        },
+        {
+          "id" : "EMAPA:32940",
+          "type" : "CLASS",
+          "lbl" : "metatarsus"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:36159",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001448-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001448-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32940",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:36159",
+            "UBERON:0001448-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

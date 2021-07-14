@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:58d91fe0e2ef18e023741ccafb69777a0e6d560a63687a4faf0e0cb48efaea85",
+      "nodes" : [
+        {
+          "id" : "UBERON:0004040-mouse",
+          "type" : "CLASS",
+          "lbl" : "cortical intermediate zone (mouse)"
+        },
+        {
+          "id" : "EMAPA:32712",
+          "type" : "CLASS",
+          "lbl" : "cerebral cortex intermediate zone"
+        },
+        {
+          "id" : "EMAPA:17545",
+          "type" : "CLASS",
+          "lbl" : "cerebral cortex mantle layer"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0004040-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:32712",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17545",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004040-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17545",
+            "UBERON:0004040-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

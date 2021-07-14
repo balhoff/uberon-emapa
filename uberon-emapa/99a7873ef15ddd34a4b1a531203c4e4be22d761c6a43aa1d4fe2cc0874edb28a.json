@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:99a7873ef15ddd34a4b1a531203c4e4be22d761c6a43aa1d4fe2cc0874edb28a",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17342",
+          "type" : "CLASS",
+          "lbl" : "right ventricle cardiac muscle"
+        },
+        {
+          "id" : "UBERON:0003381-mouse",
+          "type" : "CLASS",
+          "lbl" : "cardiac muscle of right ventricle (mouse)"
+        },
+        {
+          "id" : "UBERON:0006567-mouse",
+          "type" : "CLASS",
+          "lbl" : "right ventricle myocardium (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17342",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003381-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0006567-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17342",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0003381-mouse",
+            "EMAPA:17342"
+          ]
+        }
+      ]
+    }
+  ]
+}

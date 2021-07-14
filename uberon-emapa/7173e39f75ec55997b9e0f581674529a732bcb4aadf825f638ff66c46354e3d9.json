@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:7173e39f75ec55997b9e0f581674529a732bcb4aadf825f638ff66c46354e3d9",
+      "nodes" : [
+        {
+          "id" : "UBERON:0002241-mouse",
+          "type" : "CLASS",
+          "lbl" : "chondrocranium (mouse)"
+        },
+        {
+          "id" : "EMAPA:17681",
+          "type" : "CLASS",
+          "lbl" : "chondrocranium"
+        },
+        {
+          "id" : "UBERON:0001703-mouse",
+          "type" : "CLASS",
+          "lbl" : "neurocranium (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0002241-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17681",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17681",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001703-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17681",
+            "UBERON:0001703-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

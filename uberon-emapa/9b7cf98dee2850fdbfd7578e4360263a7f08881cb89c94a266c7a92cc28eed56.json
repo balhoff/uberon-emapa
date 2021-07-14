@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9b7cf98dee2850fdbfd7578e4360263a7f08881cb89c94a266c7a92cc28eed56",
+      "nodes" : [
+        {
+          "id" : "EMAPA:17571",
+          "type" : "CLASS",
+          "lbl" : "vestibulo-cochlear ganglion"
+        },
+        {
+          "id" : "UBERON:0002827-mouse",
+          "type" : "CLASS",
+          "lbl" : "vestibulocochlear ganglion (mouse)"
+        },
+        {
+          "id" : "EMAPA:16982",
+          "type" : "CLASS",
+          "lbl" : "acoustic ganglion"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:17571",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0002827-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0002827-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16982",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17571",
+            "UBERON:0002827-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

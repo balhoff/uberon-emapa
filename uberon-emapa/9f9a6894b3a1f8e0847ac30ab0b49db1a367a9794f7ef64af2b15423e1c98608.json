@@ -1,0 +1,78 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9f9a6894b3a1f8e0847ac30ab0b49db1a367a9794f7ef64af2b15423e1c98608",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16821",
+          "type" : "CLASS",
+          "lbl" : "common atrial chamber right part cardiac jelly"
+        },
+        {
+          "id" : "UBERON:0005261-mouse",
+          "type" : "CLASS",
+          "lbl" : "atrium cardiac jelly (mouse)"
+        },
+        {
+          "id" : "EMAPA:16814",
+          "type" : "CLASS",
+          "lbl" : "common atrial chamber left part cardiac jelly"
+        },
+        {
+          "id" : "EMAPA:16343",
+          "type" : "CLASS",
+          "lbl" : "common atrial chamber cardiac jelly"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16821",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005261-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005261-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16814",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005261-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16343",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0005261-mouse",
+            "EMAPA:16821"
+          ]
+        }
+      ]
+    }
+  ]
+}

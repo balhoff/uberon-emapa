@@ -1,0 +1,98 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:21c1cc08c99a424283be0aac5691e922525543e21f3aaddf62ef9d9a80b9df31",
+      "nodes" : [
+        {
+          "id" : "EMAPA:35443",
+          "type" : "CLASS",
+          "lbl" : "intestine smooth muscle"
+        },
+        {
+          "id" : "UBERON:0001240-mouse",
+          "type" : "CLASS",
+          "lbl" : "muscularis mucosae of intestine (mouse)"
+        },
+        {
+          "id" : "UBERON:0004221-mouse",
+          "type" : "CLASS",
+          "lbl" : "intestine smooth muscle (mouse)"
+        },
+        {
+          "id" : "EMAPA:35441",
+          "type" : "CLASS",
+          "lbl" : "intestine muscularis"
+        },
+        {
+          "id" : "EMAPA:35442",
+          "type" : "CLASS",
+          "lbl" : "intestine muscularis mucosa"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0004221-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:35443",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35441",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004221-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:35442",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001240-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001240-mouse",
+          "pred" : "asserted_is_a",
+          "obj" : "UBERON:0004221-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:35441",
+            "UBERON:0004221-mouse"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "EMAPA:35442",
+            "UBERON:0001240-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

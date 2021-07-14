@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:508a3b75f435bca1b6f641207924143de852ae47eb1ef63ba3d2ede879d07bef",
+      "nodes" : [
+        {
+          "id" : "UBERON:0003265-mouse",
+          "type" : "CLASS",
+          "lbl" : "chorionic mesenchyme (mouse)"
+        },
+        {
+          "id" : "EMAPA:16266",
+          "type" : "CLASS",
+          "lbl" : "chorion mesenchyme"
+        },
+        {
+          "id" : "EMAPA:16114",
+          "type" : "CLASS",
+          "lbl" : "chorion mesoderm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0003265-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16266",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:16114",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003265-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0003265-mouse",
+            "EMAPA:16114"
+          ]
+        }
+      ]
+    }
+  ]
+}

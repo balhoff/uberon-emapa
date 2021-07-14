@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:51a2d0de26e7594c7169259473aa62715e4bc33883a2ea054d10d745805e7c6b",
+      "nodes" : [
+        {
+          "id" : "UBERON:0002435-mouse",
+          "type" : "CLASS",
+          "lbl" : "striatum (mouse)"
+        },
+        {
+          "id" : "EMAPA:17549",
+          "type" : "CLASS",
+          "lbl" : "corpus striatum"
+        },
+        {
+          "id" : "UBERON:0000369-mouse",
+          "type" : "CLASS",
+          "lbl" : "corpus striatum (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "UBERON:0002435-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17549",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:17549",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0000369-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:17549",
+            "UBERON:0000369-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

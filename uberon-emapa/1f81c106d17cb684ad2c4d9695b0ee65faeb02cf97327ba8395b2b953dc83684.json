@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:1f81c106d17cb684ad2c4d9695b0ee65faeb02cf97327ba8395b2b953dc83684",
+      "nodes" : [
+        {
+          "id" : "EMAPA:31863",
+          "type" : "CLASS",
+          "lbl" : "extraembryonic mesenchyme"
+        },
+        {
+          "id" : "UBERON:0005728-mouse",
+          "type" : "CLASS",
+          "lbl" : "extraembryonic mesoderm (mouse)"
+        },
+        {
+          "id" : "EMAPA:31862",
+          "type" : "CLASS",
+          "lbl" : "extraembryonic mesoderm"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:31863",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0005728-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0005728-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:31862",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:31863",
+            "UBERON:0005728-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

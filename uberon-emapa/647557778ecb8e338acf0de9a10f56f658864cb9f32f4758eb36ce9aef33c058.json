@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:647557778ecb8e338acf0de9a10f56f658864cb9f32f4758eb36ce9aef33c058",
+      "nodes" : [
+        {
+          "id" : "EMAPA:16858",
+          "type" : "CLASS",
+          "lbl" : "gonad primordium mesenchyme"
+        },
+        {
+          "id" : "UBERON:0003855-mouse",
+          "type" : "CLASS",
+          "lbl" : "gonad mesenchyme (mouse)"
+        },
+        {
+          "id" : "EMAPA:17385",
+          "type" : "CLASS",
+          "lbl" : "gonadal mesenchyme"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:16858",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0003855-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0003855-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:17385",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "UBERON:0003855-mouse",
+            "EMAPA:16858"
+          ]
+        }
+      ]
+    }
+  ]
+}

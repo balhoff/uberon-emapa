@@ -1,0 +1,60 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b911c7a632ff36e0117ac060b491741401b1582ead9f2d29b4086e50373b8b99",
+      "nodes" : [
+        {
+          "id" : "EMAPA:30997",
+          "type" : "CLASS",
+          "lbl" : "muscle of vagina"
+        },
+        {
+          "id" : "UBERON:0004223-mouse",
+          "type" : "CLASS",
+          "lbl" : "vagina smooth muscle (mouse)"
+        },
+        {
+          "id" : "UBERON:0006652-mouse",
+          "type" : "CLASS",
+          "lbl" : "muscular layer of vagina (mouse)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:30997",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0004223-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0006652-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:30997",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:30997",
+            "UBERON:0004223-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ebfa6ceed875640f99c1e8ab2e9d46373e32e9fe597b73c256c87eba075f7856",
+      "nodes" : [
+        {
+          "id" : "EMAPA:18409",
+          "type" : "CLASS",
+          "lbl" : "carina trachea epithelium"
+        },
+        {
+          "id" : "UBERON:0001901-mouse",
+          "type" : "CLASS",
+          "lbl" : "epithelium of trachea (mouse)"
+        },
+        {
+          "id" : "EMAPA:16855",
+          "type" : "CLASS",
+          "lbl" : "trachea epithelium"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "EMAPA:18409",
+          "pred" : "owl:equivalentClass",
+          "obj" : "UBERON:0001901-mouse",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "EMAPA:18409",
+          "pred" : "asserted_is_a",
+          "obj" : "EMAPA:16855",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        },
+        {
+          "sub" : "UBERON:0001901-mouse",
+          "pred" : "is_a",
+          "obj" : "EMAPA:16855",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 1.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "EMAPA:18409",
+            "UBERON:0001901-mouse"
+          ]
+        }
+      ]
+    }
+  ]
+}
